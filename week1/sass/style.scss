@@ -109,7 +109,6 @@ body {
 }
 
 .numbers {
-    /*text-align: center;*/
     margin: 0 auto;
     width: 70%;
     max-width: 80rem;
@@ -166,33 +165,17 @@ body {
         margin: 0.4rem auto 0 auto;
     }
 }
+
 .how-it-works {
     max-width: 110em;
     margin:0 auto;
     background-color: $bg-color;
 
-    /*.title {*/
-        /*text-transform: uppercase;*/
-        /*font-family: Arial, Sans-serif;*/
-        /*font-weight: bold;*/
-        /*font-size: 3em;*/
-        /*color: $title-color;*/
-
-        /*&:after {*/
-            /*display: block;*/
-            /*content: "";*/
-            /*background-color: lightgray;*/
-            /*width: 4rem;*/
-            /*height: .3rem;*/
-            /*@include border-radius(3px);*/
-            /*margin: 0.4rem auto 0 auto;*/
-        /*}*/
-    /*}*/
-
     ul {
         margin: 4em 0 8em 0;
         overflow: auto;
         li {
+            
             &:before {
                 display: block;
                 content: "";
@@ -201,8 +184,7 @@ body {
                 position: relative;
                 top: 3.5rem;
                 left: 50%;
-                margin: 0 2.0rem 0 2.0rem;
-                padding-right: 2.5rem;
+                margin: 0 2rem 0 2.0rem;
             }
 
 
@@ -318,8 +300,11 @@ body {
     .title {
         margin-bottom: 5rem;
     }
+
     ul {
-        max-width: 80rem;
+        max-width: 100rem;
+        width: 85%;
+        
         margin: 0 auto;
         li {
             display: inline-block;
@@ -327,9 +312,10 @@ body {
             width: 49%;
             margin-bottom: 2rem;
             .icon {
-                width: 30%;
+                width: 20%;
                 height: 100%;
                 float: left;
+            display: inline-block;
             }
 
             .icon-title {
@@ -340,13 +326,123 @@ body {
             p {
                 clear: both;
                 font-family: Arial, Sans-serif;
-                font-size: 1.0rem;
+                font-size: 1.2rem;
                 color: darkgray;
                 line-height: 1.5rem;
                 text-align: left;
-                margin-left: 30%;
+                margin-left: 20%;
+                margin-right: 10%;
             }
+        }
+        
+        &:after {
+             display: block;
+             content:"";
+             background-color: lightgray;
+             height: 3px;
         }
     }
 }
 
+$feedback-test: #60677A;
+$feedback-job-color:  #A0A5B0;
+.feedback {
+     margin-top: 4rem;
+
+     header {
+         letter-spacing: -1rem;
+         .feedback-button {
+            padding: 1rem;
+            width: 10rem;
+            font-family: Arial, Sans-serif;
+            font-weight: bold;
+            border: 2px solid $feedback-test;
+            font-size: .8rem;
+         }
+         .feedback-test {
+            @extend .feedback-button;
+            background-color: $feedback-test;
+            color: white;
+         }
+
+         .feedback-recent {
+            background-color: $bg-color;
+            @extend .feedback-button;
+            color: $feedback-test;
+         }
+     }
+
+     .feedback-detail {
+         width: 60%;
+         max-width: 100rem;
+         margin: 3rem auto 0 auto;
+         .feedback-content {
+            font-family: Arial, Sans-serif;
+            font-size: 1.5rem;
+            color: $feedback-test;
+            line-height: 1.7rem;
+            font-weight: bold;
+
+            &:before {
+                 font-family: serif;
+                 content: "“";
+                 display: block;
+                 height: 5rem;
+                 line-height: 5rem;
+                 width: 5rem;
+                 text-align: center;
+                 font-size: 5rem;
+                 margin: 0 auto;
+                 color: $secondy-text-color;
+            }
+
+            &:after {
+                 content: "";
+                 display: block;
+                 width: 2rem;
+                 height: 2px;
+                 background-color: $secondy-text-color;
+                 margin: 2rem auto;
+            }
+
+         }
+
+         .feedback-name {
+              font-family: Arial, Sans-serif;
+              font-weight: bold;
+              font-size: 1.1rem;
+              color: $feedback-test;
+         }
+
+         .feedback-job {
+              margin: .8rem auto;
+              font-family: Arial, Sans-serif;
+              font-weight: bold;
+              font-size: 1.2rem;
+              color: $feedback-job-color;
+         }
+     }
+    
+     .feedback-pics {
+         margin: 3rem auto 0 auto;
+         overflow: hidden;
+         text-align: center;
+         width: 39%;
+         .feedback-pic {
+             margin: 6%;
+             padding: .4rem;
+             float: left;
+             width: 20%;
+             height: 7rem;
+             @include border-radius(100%);
+             box-sizing: border-box;
+             display: block;
+             opacity: .5;
+         }
+
+         .pic-middle {
+              border: 3px solid $secondy-text-color;
+              opacity: 1;
+         }
+     }
+}
