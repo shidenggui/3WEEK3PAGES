@@ -115,10 +115,10 @@ body {
 }
 /* line 39, ../sass/style.scss */
 .hero header img {
+  float: left;
+  height: 6rem;
   margin: 0 auto;
   width: 10rem;
-  height: 6rem;
-  float: left;
 }
 /* line 46, ../sass/style.scss */
 .hero header ul {
@@ -144,7 +144,7 @@ body {
 }
 /* line 71, ../sass/style.scss */
 .hero h1 {
-  font-family: Arial, Sans-serif;
+  font-family: Arial, serif;
   font-weight: bold;
   font-size: 1.8rem;
   color: white;
@@ -153,7 +153,7 @@ body {
 }
 /* line 80, ../sass/style.scss */
 .hero h2 {
-  font-family: Arial, Sans-serif;
+  font-family: Arial, serif;
   font-size: 1.1rem;
   color: #B0B2B9;
 }
@@ -194,7 +194,7 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1rem;
-  font-family: Arial, Sans-serif;
+  font-family: Arial, serif;
   text-align: center;
   color: #ffffff;
   padding: 1.5rem 2rem;
@@ -221,13 +221,13 @@ body {
 }
 /* line 133, ../sass/style.scss */
 .numbers ul li {
-  float: left;
-  width: 25%;
-  box-sizing: border-box;
-  border-top: 1px solid #D9DADA;
   border-bottom: 3px solid #D9DADA;
   border-left: 1px solid #D9DADA;
+  border-top: 1px solid #D9DADA;
+  box-sizing: border-box;
+  float: left;
   padding: 1rem 0rem;
+  width: 25%;
 }
 /* line 142, ../sass/style.scss */
 .numbers ul li:last-child {
@@ -235,15 +235,15 @@ body {
 }
 /* line 146, ../sass/style.scss */
 .numbers ul li h2 {
-  font-family: Sans;
-  font-weight: bold;
-  font-size: 2rem;
-  padding: 2rem 0 1rem 0;
   color: #60677A;
+  font-family: Arial, serif;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 2rem 0 1rem 0;
 }
 /* line 154, ../sass/style.scss */
 .numbers ul li h3 {
-  font-family: Arial, Sans-serif;
+  font-family: Arial, serif;
   font-size: 1.1rem;
   color: gray;
   padding: 0 0 1.8rem 0;
@@ -251,16 +251,16 @@ body {
 
 /* line 166, ../sass/style.scss */
 .title {
-  text-transform: uppercase;
-  font-family: Arial, Sans-serif;
-  font-weight: bold;
-  font-size: 2em;
   color: #60677A;
+  font-family: Arial, serif;
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 /* line 173, ../sass/style.scss */
 .title:after {
+  content: '';
   display: block;
-  content: "";
   background-color: lightgray;
   width: 3rem;
   height: .2rem;
@@ -313,7 +313,7 @@ body {
   line-height: 2.5rem;
   margin: 1rem auto 4rem auto;
   padding: .4em;
-  font-family: Arial, Sans-serif;
+  font-family: Arial, serif;
   font-weight: bold;
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
@@ -677,52 +677,51 @@ body {
 /* line 568, ../sass/style.scss */
 footer {
   margin: 1.5rem auto;
-  width: 85%;
   max-width: 80rem;
   overflow: hidden;
+  width: 85%;
 }
 /* line 574, ../sass/style.scss */
-footer ul {
+footer .tp-links {
+  float: left;
   overflow: hidden;
-  width: 65%;
+}
+/* line 577, ../sass/style.scss */
+footer .tp-links li {
   float: left;
 }
-/* line 579, ../sass/style.scss */
-footer ul li {
-  float: left;
-}
-/* line 582, ../sass/style.scss */
-footer ul li a {
-  line-height: 2rem;
-  text-decoration: none;
+/* line 580, ../sass/style.scss */
+footer .tp-links a {
+  color: #60677A;
   font-family: Arial, Sans-serif;
   font-size: 1.3rem;
+  line-height: 2rem;
   margin-right: .7rem;
-  color: #60677A;
+  text-decoration: none;
 }
-/* line 593, ../sass/style.scss */
+/* line 590, ../sass/style.scss */
 footer .tp-icons {
-  width: 15%;
   float: right;
+  width: 15%;
 }
-/* line 597, ../sass/style.scss */
+/* line 594, ../sass/style.scss */
 footer .tp-icons li {
   float: right;
 }
-/* line 601, ../sass/style.scss */
+/* line 598, ../sass/style.scss */
 footer .tp-icons .icon-footer {
-  line-height: 2rem;
-  height: 2rem;
   font-size: 1.5rem;
+  height: 2rem;
+  line-height: 2rem;
 }
-/* line 607, ../sass/style.scss */
+/* line 604, ../sass/style.scss */
 footer .tp-icons .icon-twitter:before {
-  margin-left: 1rem;
-  content: "\ea91";
   color: #4D99CB;
+  content: '\ea91';
+  margin-left: 1rem;
 }
-/* line 613, ../sass/style.scss */
+/* line 610, ../sass/style.scss */
 footer .tp-icons .icon-facebook:before {
-  content: "\ea8c";
   color: #4C73B6;
+  content: '\ea8c';
 }

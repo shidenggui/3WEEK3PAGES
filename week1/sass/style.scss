@@ -37,10 +37,10 @@ body {
 
   header {
     img {
+      float: left;
+      height: 6rem;
       margin: 0 auto;
       width: 10rem;
-      height: 6rem;
-      float: left;
     }
 
     ul {
@@ -69,7 +69,7 @@ body {
   }
 
   h1 {
-    font-family: Arial, Sans-serif;
+    font-family: Arial, serif;
     font-weight: bold;
     font-size: 1.8rem;
     color: white;
@@ -78,7 +78,7 @@ body {
   }
 
   h2 {
-    font-family: Arial, Sans-serif;
+    font-family: Arial, serif;
     font-size: 1.1rem;
     color: #B0B2B9;
   }
@@ -107,7 +107,7 @@ body {
       text-transform: uppercase;
       font-weight: bold;
       font-size: 1rem;
-      font-family: Arial, Sans-serif;
+      font-family: Arial, serif;
       text-align: center;
       color: $highlight-text-color;
       padding: 1.5rem 2rem;
@@ -131,28 +131,28 @@ body {
     margin: 0 auto;
 
     li {
-      float: left;
-      width: 25%;
-      box-sizing: border-box;
-      border-top: 1px solid $secondy-text-color;
       border-bottom: 3px solid $secondy-text-color;
       border-left: 1px solid $secondy-text-color;
+      border-top: 1px solid $secondy-text-color;
+      box-sizing: border-box;
+      float: left;
       padding: 1rem 0rem;
+      width: 25%;
 
       &:last-child {
         border-right: 1px solid $secondy-text-color;
       }
 
       h2 {
-        font-family: Sans;
-        font-weight: bold;
-        font-size: 2rem;
-        padding: 2rem 0 1rem 0;
         color: $title-color;
+        font-family: Arial, serif;
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 2rem 0 1rem 0;
       }
 
       h3 {
-        font-family: Arial, Sans-serif;
+        font-family: Arial, serif;
         font-size: 1.1rem;
         color: gray;
         padding: 0 0 1.8rem 0;
@@ -164,15 +164,15 @@ body {
 }
 
 .title {
-  text-transform: uppercase;
-  font-family: Arial, Sans-serif;
-  font-weight: bold;
-  font-size: 2em;
   color: $title-color;
+  font-family: Arial, serif;
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
 
   &:after {
+    content: '';
     display: block;
-    content: "";
     background-color: lightgray;
     width: 3rem;
     height: .2rem;
@@ -222,7 +222,7 @@ body {
         line-height: 2.5rem;
         margin: 1rem auto 4rem auto;
         padding: .4em;
-        font-family: Arial, Sans-serif;
+        font-family: Arial, serif;
         font-weight: bold;
 
         @include border-radius(100%);
@@ -567,52 +567,49 @@ $feedback-job-color: #A0A5B0;
 
 footer {
   margin: 1.5rem auto;
-  width: 85%;
   max-width: 80rem;
   overflow: hidden;
+  width: 85%;
 
-  ul {
-    overflow: hidden;
-    width: 65%;
+  .tp-links {
     float: left;
-
+    overflow: hidden;
     li {
       float: left;
-
-      a {
-        line-height: 2rem;
-        text-decoration: none;
-        font-family: Arial, Sans-serif;
-        font-size: 1.3rem;
-        margin-right: .7rem;
-        color: $title-color;
-      }
+    }
+    a {
+      color: $title-color;
+      font-family: Arial, Sans-serif;
+      font-size: 1.3rem;
+      line-height: 2rem;
+      margin-right: .7rem;
+      text-decoration: none;
     }
   }
 
   .tp-icons {
-    width: 15%;
     float: right;
+    width: 15%;
 
     li {
       float: right;
     }
 
     .icon-footer {
-      line-height: 2rem;
-      height: 2rem;
       font-size: 1.5rem;
+      height: 2rem;
+      line-height: 2rem;
     }
 
     .icon-twitter:before {
-      margin-left: 1rem;
-      content: "\ea91";
       color: #4D99CB;
+      content: '\ea91';
+      margin-left: 1rem;
     }
 
     .icon-facebook:before {
-      content: "\ea8c";
       color: #4C73B6;
+      content: '\ea8c';
     }
   }
 }
