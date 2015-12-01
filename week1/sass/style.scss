@@ -469,16 +469,20 @@ $feedback-job-color:  #A0A5B0;
      /*justify-content: center;*/
      /*align-items: stretch;*/
      .footer-side {
+         float: left;
          font-family: Arial, Sans-serif;
          /*font-size: 1.8rem;*/
-         font-size: 1em;
+         font-size: 1.8rem;
          font-weight: bold;
          color: white;
          margin-right: 1%;
          vertical-align: middle;
+         height: 2rem;
+         line-height: 2rem;
      }
 
      div {
+        float: left;
         display: inline-block;
         letter-spacing: -0.31rem;
         width: 60%;
