@@ -584,33 +584,35 @@ body {
   background: url("../images/footer-pic.jpg");
   background-size: contain;
   border: 0;
-  /*opacity: .5;*/
   padding: 6rem;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*align-items: stretch;*/
 }
-/* line 472, ../sass/style.scss */
+/* line 471, ../sass/style.scss */
 .footer-search .footer-side {
   font-family: Arial, Sans-serif;
   font-size: 1.8rem;
   font-weight: bold;
   color: white;
   margin-right: 1.5rem;
-  display: flex;
-  align-items: center;
-  /*height: 2.2rem;;*/
-  /*line-height: 2.2rem;*/
+  vertical-align: middle;
+}
+/* line 480, ../sass/style.scss */
+.footer-search div {
+  display: inline-block;
+  letter-spacing: -0.31rem;
 }
 /* line 484, ../sass/style.scss */
 .footer-search .footer-search-input {
   /*padding: .5rem 2rem .5rem .5rem;*/
   padding-left: .5rem;
-  width: 50%;
+  width: 25rem;
   height: 2.8rem;
-  border: 1px solid #D9DADA;
+  border: 0;
   border-radius: 4px 0 0 4px;
+  padding: 0 0 0 2%;
 }
 /* line 61, ../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 .footer-search .footer-search-input:-moz-placeholder {
@@ -632,57 +634,68 @@ body {
   color: #60677A;
   font-family: Arial, Sans-serif;
 }
-/* line 497, ../sass/style.scss */
+/* line 498, ../sass/style.scss */
 .footer-search .footer-search-button {
+  padding: 0;
+  height: 2.8rem;
   width: 6rem;
   text-transform: uppercase;
   font-family: Arial, Sans-serif;
   font-weight: bold;
   color: white;
   background-color: #67DDAB;
-  border: 0px solid;
+  border: 0;
   border-radius: 0 4px 4px 0;
 }
 
-/* line 509, ../sass/style.scss */
+/* line 512, ../sass/style.scss */
 footer {
   margin: 1.5rem auto;
   width: 85%;
   max-width: 80rem;
   overflow: hidden;
 }
-/* line 516, ../sass/style.scss */
+/* line 518, ../sass/style.scss */
+footer ul {
+  overflow: hidden;
+  width: 65%;
+  float: left;
+}
+/* line 522, ../sass/style.scss */
 footer ul li {
   float: left;
 }
-/* line 518, ../sass/style.scss */
+/* line 524, ../sass/style.scss */
 footer ul li a {
   line-height: 2rem;
   text-decoration: none;
   font-family: Arial, Sans-serif;
   font-size: 1.3rem;
-  margin: .7rem;
+  margin-right: .7rem;
   color: #60677A;
 }
-/* line 529, ../sass/style.scss */
+/* line 535, ../sass/style.scss */
 footer .tp-icons {
+  width: 15%;
   float: right;
-  margin-right: 5rem;
-}
-/* line 533, ../sass/style.scss */
-footer .tp-icons li {
-  margin: auto 1.5rem auto auto;
-}
-/* line 536, ../sass/style.scss */
-footer .tp-icons .icon-footer {
-  font-size: 1.5rem;
 }
 /* line 539, ../sass/style.scss */
+footer .tp-icons li {
+  float: right;
+}
+/* line 542, ../sass/style.scss */
+footer .tp-icons .icon-footer {
+  line-height: 2rem;
+  height: 2rem;
+  font-size: 1.5rem;
+}
+/* line 547, ../sass/style.scss */
 footer .tp-icons .icon-twitter:before {
+  margin-left: 1rem;
   content: "\ea91";
   color: #4D99CB;
 }
-/* line 544, ../sass/style.scss */
+/* line 553, ../sass/style.scss */
 footer .tp-icons .icon-facebook:before {
   content: "\ea8c";
   color: #4C73B6;

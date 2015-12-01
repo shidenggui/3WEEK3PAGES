@@ -463,31 +463,32 @@ $feedback-job-color:  #A0A5B0;
      background: url('../images/footer-pic.jpg');
      background-size: contain;
      border: 0;
-     /*opacity: .5;*/
      padding: 6rem;
      overflow: hidden;
-     display: flex;
-     justify-content: center;
-     align-items: stretch;
+     /*display: flex;*/
+     /*justify-content: center;*/
+     /*align-items: stretch;*/
      .footer-side {
          font-family: Arial, Sans-serif;
          font-size: 1.8rem;
          font-weight: bold;
          color: white;
          margin-right: 1.5rem;
-         display: flex;
-         align-items: center;
-         /*height: 2.2rem;;*/
-         /*line-height: 2.2rem;*/
+         vertical-align: middle;
      }
 
+     div {
+        display: inline-block;
+        letter-spacing: -0.31rem;
+     }
      .footer-search-input {
           /*padding: .5rem 2rem .5rem .5rem;*/
           padding-left: .5rem;
-          width: 50%;
+          width: 25rem;
           height: 2.8rem;
-          border: 1px solid $secondy-text-color;
+          border: 0;
           border-radius: 4px 0 0 4px;
+          padding: 0 0 0 2%;
           @include input-placeholder {
                color: $title-color;
                font-family: Arial, Sans-serif;
@@ -495,13 +496,15 @@ $feedback-job-color:  #A0A5B0;
      }
 
      .footer-search-button {
+         padding: 0;
+         height: 2.8rem;
          width: 6rem;
          text-transform: uppercase;
          font-family: Arial, Sans-serif;
          font-weight: bold;
          color: white;
          background-color: $button-color;
-         border:0px solid;
+         border: 0;
           border-radius: 0 4px 4px 0;
      }
 }
@@ -513,6 +516,9 @@ footer {
 
     overflow: hidden;
     ul {
+        overflow: hidden;
+        width: 65%;
+        float: left;
         li {
             float: left;
             a {
@@ -520,23 +526,26 @@ footer {
                 text-decoration: none;
                 font-family: Arial, Sans-serif;
                 font-size: 1.3rem;
-                margin: .7rem;
+                margin-right: .7rem;
                 color: $title-color;
             }
         }
     }
 
     .tp-icons {
+         width: 15%;
          float: right;
         
-         margin-right: 5rem;
          li {
-             margin:auto 1.5rem auto auto;
+            float: right;
          }
          .icon-footer {
+            line-height: 2rem;
+            height: 2rem;
              font-size: 1.5rem;
          }
          .icon-twitter:before {
+             margin-left: 1rem;
              content:"\ea91";
              color: #4D99CB;
          }
