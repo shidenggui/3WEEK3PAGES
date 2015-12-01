@@ -16,549 +16,603 @@ $icon-quick: #66BE96;
 $icon-easy: #ECA95A;
 $icon-free: #01B4EA;
 $icon-independent: #AF7AC4;
-$icon-comprehensive: #F26D7E; 
+$icon-comprehensive: #F26D7E;
 $icon-awesome: #ED7F5B;
 
 body {
-    font-size: 62.5%;
-    text-align: center;
-    background-color: $bg-color;
-    max-width: 125rem;
+  font-size: 62.5%;
+  text-align: center;
+  background-color: $bg-color;
+  max-width: 125rem;
 }
+
 .hero {
-    max-width: 95rem;
-    margin: 0 auto;
-    /*padding-bottom: 10%;*/
-    padding-bottom: 12rem;
-    background: url('../images/hero.png');
-    background-size: cover;
+  max-width: 95rem;
+  margin: 0 auto;
 
-    header {
-        img {
-            margin: 0 auto;
-            width: 10rem;
-            height: 6rem;
-            float: left;
-        }
-        ul {
-            float: right;
-            color: white;
-            padding: 0 8rem;
-            li {
-                font-family: Arial, Sans-serif;
-                font-size: 1.1rem;
-                float: left;
-                border: 1px solid transparent;
-                padding: 0.5rem .5rem;
-                margin: 1rem 0;
-                border-radius: 3px;
-                &:last-child {
-                    border: 1px solid $highlight-text-color;
-                    margin-left: .7rem;
-                    padding: .5rem .8rem;
-                }
-            }
-        }
-        @include clearfix;
+  /*padding-bottom: 10%;*/
+  padding-bottom: 12rem;
+  background: url("../images/hero.png");
+  background-size: cover;
+
+  header {
+    img {
+      margin: 0 auto;
+      width: 10rem;
+      height: 6rem;
+      float: left;
     }
 
-    h1 {
-        font-family: Arial, Sans-serif;
-        font-weight: bold;
-        font-size: 1.8rem;
-        color: white;
-        margin-top: 15rem;
-        margin-bottom: .8rem;
-    }
+    ul {
+      float: right;
+      color: white;
+      padding: 0 8rem;
 
-    h2 {
+      li {
         font-family: Arial, Sans-serif;
         font-size: 1.1rem;
-        color: #B0B2B9;
+        float: left;
+        border: 1px solid transparent;
+        padding: 0.5rem .5rem;
+        margin: 1rem 0;
+        border-radius: 3px;
+
+        &:last-child {
+          border: 1px solid $highlight-text-color;
+          margin-left: .7rem;
+          padding: .5rem .8rem;
+        }
+      }
     }
 
-    form {
-        padding: 1.5rem 0 15rem 0;
-        /*@include inline-block;*/
-        letter-spacing: -0.31em;
-        input[type="text"] {
-            font-size: 1.2rem;
-            padding: 1.36rem 0rem 1.5rem 1rem;
-            border: 0;
-            width: 35%;
-            border-radius: 5px 0 0 5px;
-            color: white;
-            background-color: $secondy-text-opacity-color;
-            @include input-placeholder {
-                color: white;
-            }
-        }
+    @include clearfix;
+  }
 
-        input[type="button"] {
-            text-transform: uppercase;
-            font-weight: bold;
-            font-size: 1rem;
-            font-family: Arial, Sans-serif;
-            text-align: center;
-            color: $highlight-text-color;
-            padding: 1.5rem 2rem;
-            border: 0;
-            background-color: $button-color;
-            border-radius: 0 5px 5px 0;
-        }
+  h1 {
+    font-family: Arial, Sans-serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: white;
+    margin-top: 15rem;
+    margin-bottom: .8rem;
+  }
 
+  h2 {
+    font-family: Arial, Sans-serif;
+    font-size: 1.1rem;
+    color: #B0B2B9;
+  }
+
+  form {
+    padding: 1.5rem 0 15rem 0;
+
+    /*@include inline-block;*/
+    letter-spacing: -0.31em;
+
+    input[type="text"] {
+      font-size: 1.2rem;
+      padding: 1.36rem 0rem 1.5rem 1rem;
+      border: 0;
+      width: 35%;
+      border-radius: 5px 0 0 5px;
+      color: white;
+      background-color: $secondy-text-opacity-color;
+
+      @include input-placeholder {
+        color: white;
+      }
     }
+
+    input[type="button"] {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1rem;
+      font-family: Arial, Sans-serif;
+      text-align: center;
+      color: $highlight-text-color;
+      padding: 1.5rem 2rem;
+      border: 0;
+      background-color: $button-color;
+      border-radius: 0 5px 5px 0;
+    }
+  }
 }
 
 .numbers {
+  margin: 0 auto;
+  width: 70%;
+  max-width: 70rem;
+
+  ul {
+    position: relative;
+    top: -7rem;
+    background: $bg-color;
+    border-radius: 5px;
     margin: 0 auto;
-    width: 70%;
-    max-width: 70rem;
-    ul {
-        position: relative;
-        top: -7rem;
-        background: $bg-color;
-        border-radius: 5px;
-        margin: 0 auto;
-        li {
-            float: left;
-            width: 25%;
-            box-sizing: border-box;
-            border-top: 1px solid $secondy-text-color;
-            border-bottom: 3px solid $secondy-text-color;
-            border-left: 1px solid $secondy-text-color;
-            padding:1rem 0rem;
-            &:last-child {
-                border-right: 1px solid $secondy-text-color;
-            }
 
-            h2 {
-                font-family: Sans;
-                font-weight: bold;
-                font-size: 2rem;
-                padding: 2rem 0 1rem 0;
-                color: $title-color;
-            }
+    li {
+      float: left;
+      width: 25%;
+      box-sizing: border-box;
+      border-top: 1px solid $secondy-text-color;
+      border-bottom: 3px solid $secondy-text-color;
+      border-left: 1px solid $secondy-text-color;
+      padding: 1rem 0rem;
 
-            h3 {
-                font-family: Arial, Sans-serif;
-                font-size: 1.1rem;
-                color: gray;
-                padding: 0 0 1.8rem 0;
-            }
-        }
+      &:last-child {
+        border-right: 1px solid $secondy-text-color;
+      }
 
-        @include clearfix;
+      h2 {
+        font-family: Sans;
+        font-weight: bold;
+        font-size: 2rem;
+        padding: 2rem 0 1rem 0;
+        color: $title-color;
+      }
+
+      h3 {
+        font-family: Arial, Sans-serif;
+        font-size: 1.1rem;
+        color: gray;
+        padding: 0 0 1.8rem 0;
+      }
     }
+
+    @include clearfix;
+  }
 }
 
 .title {
-    text-transform: uppercase;
-    font-family: Arial, Sans-serif;
-    font-weight: bold;
-    font-size: 2em;
-    color: $title-color;
-    &:after {
-        display: block;
-        content: "";
-        background-color: lightgray;
-        width: 3rem;
-        height: .2rem;
-        @include border-radius(3px);
-        margin: 0.4rem auto 0 auto;
-    }
+  text-transform: uppercase;
+  font-family: Arial, Sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  color: $title-color;
+
+  &:after {
+    display: block;
+    content: "";
+    background-color: lightgray;
+    width: 3rem;
+    height: .2rem;
+
+    @include border-radius(3px);
+
+    margin: 0.4rem auto 0 auto;
+  }
 }
 
 .how-it-works {
-    max-width: 90rem;
-    margin:0 auto;
-    background-color: $bg-color;
+  max-width: 90rem;
+  margin: 0 auto;
+  background-color: $bg-color;
 
-    ul {
-        margin: 4em 0 8em 0;
-        overflow: auto;
-        li {
-            
-            &:before {
-                display: block;
-                content: "";
-                background-color: lightgray;
-                height: 3px;
-                position: relative;
-                top: 3.5rem;
-                left: 50%;
-                margin: 0 2rem 0 2.0rem;
-            }
+  ul {
+    margin: 4em 0 8em 0;
+    overflow: auto;
 
-
-            &:last-child:before {
-                display: none;
-            }
-
-            float: left;
-            width: 33.3%;
-            box-sizing: border-box;
-
-            .number {
-                font-size: 1.8rem;
-                color: gray;
-                border: 3px solid lightgray;
-                width: 2.5rem;
-                height: 2.5rem;
-                display: block;
-                line-height: 2.5rem;
-                margin: 1rem auto 4rem auto;
-                padding: .4em;
-                font-family: Arial, Sans-serif;
-                font-weight: bold;
-                @include border-radius(100%);
-
-            }
-
-
-            p {
-                font-family: serif;
-                font-size: 1.2rem;
-                color: darkgray;
-                text-align: center;
-                line-height: 1.7rem;
-                margin:auto;
-                width: 80%;
-            }
-        }
-    }
-
-    &:after {
-        content: "";
+    li {
+      &:before {
         display: block;
+        content: "";
         background-color: lightgray;
-        height: 2px;
-        max-width: 100rem;
-    }
+        height: 3px;
+        position: relative;
+        top: 3.5rem;
+        left: 50%;
+        margin: 0 2rem 0 2.0rem;
+      }
 
+      &:last-child:before {
+        display: none;
+      }
+
+      float: left;
+      width: 33.3%;
+      box-sizing: border-box;
+
+      .number {
+        font-size: 1.8rem;
+        color: gray;
+        border: 3px solid lightgray;
+        width: 2.5rem;
+        height: 2.5rem;
+        display: block;
+        line-height: 2.5rem;
+        margin: 1rem auto 4rem auto;
+        padding: .4em;
+        font-family: Arial, Sans-serif;
+        font-weight: bold;
+
+        @include border-radius(100%);
+      }
+
+      p {
+        font-family: serif;
+        font-size: 1.2rem;
+        color: darkgray;
+        text-align: center;
+        line-height: 1.7rem;
+        margin: auto;
+        width: 80%;
+      }
+    }
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    background-color: lightgray;
+    height: 2px;
+    max-width: 100rem;
+  }
 }
+
 .icon {
-    font-size: 5rem;
+  font-size: 5rem;
 }
+
 .icon-profile:before {
-    margin: 2rem auto;
-    color: #ECA95A;
-    content: "\e923";
+  margin: 2rem auto;
+  color: #ECA95A;
+  content: "\e923";
 }
 
 .icon-pencil:before {
-    color: #AD9DD3;
-    content: "\e905";
+  color: #AD9DD3;
+  content: "\e905";
 }
 
 .icon-people:before {
-    color: #4D99CB;
-    content: "\e9de";
+  color: #4D99CB;
+  content: "\e9de";
 }
 
 .icon-title {
-    margin: 2rem auto 1rem auto;
-    font-family: Arial, Sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
-    color: $title-color;
+  margin: 2rem auto 1rem auto;
+  font-family: Arial, Sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: $title-color;
 }
 
 .icon-quick:before {
-    content: "\ea10";
-    color: $icon-quick;
+  content: "\ea10";
+  color: $icon-quick;
 }
 
 .icon-easy:before {
-    content: "\ea2e";
-    color: $icon-easy;
+  content: "\ea2e";
+  color: $icon-easy;
 }
 
 .icon-free:before {
-    content: "\e935";
-    color: $icon-free;
+  content: "\e935";
+  color: $icon-free;
 }
 
 .icon-independent:before {
-    content: "\e971";
-    color: $icon-independent;
+  content: "\e971";
+  color: $icon-independent;
 }
 
 .icon-comprehensive:before {
-    content: "\e922";
-    color: $icon-comprehensive;
+  content: "\e922";
+  color: $icon-comprehensive;
 }
 
 .icon-awesome:before {
-    content: "\e9d9";
-    color: $icon-awesome;
+  content: "\e9d9";
+  color: $icon-awesome;
 }
 
 .icon-small {
-     font-size: 2.5rem;
+  font-size: 2.5rem;
 }
+
 .why-choose-us {
+  max-width: 100rem;
+  margin: 5rem auto 0 auto;
+
+  .title {
+    margin-bottom: 5rem;
+  }
+
+  ul {
     max-width: 100rem;
-    margin: 5rem auto 0 auto;
-    .title {
-        margin-bottom: 5rem;
+    width: 85%;
+    margin: 0 auto;
+
+    li {
+      display: inline-block;
+      box-sizing: border-box;
+      width: 45%;
+      margin-bottom: 2rem;
+      margin-left: 3%;
+
+      .icon {
+        width: 20%;
+        height: 100%;
+        float: left;
+        display: inline-block;
+      }
+
+      .icon-title {
+        float: left;
+        margin: 0 auto 1rem auto;
+      }
+
+      p {
+        clear: both;
+        font-family: Arial, Sans-serif;
+        font-size: 1.2rem;
+        color: darkgray;
+        line-height: 1.5rem;
+        text-align: left;
+        margin-left: 20%;
+        margin-right: 10%;
+      }
     }
+  }
 
-    ul {
-        max-width: 100rem;
-        width: 85%;
-        
-        margin: 0 auto;
-        li {
-            display: inline-block;
-            box-sizing: border-box;
-            width: 45%;
-            margin-bottom: 2rem;
-            margin-left: 3%;
-            .icon {
-                width: 20%;
-                height: 100%;
-                float: left;
-            display: inline-block;
-            }
-
-            .icon-title {
-                float: left;
-                margin: 0 auto 1rem auto;
-            }
-
-            p {
-                clear: both;
-                font-family: Arial, Sans-serif;
-                font-size: 1.2rem;
-                color: darkgray;
-                line-height: 1.5rem;
-                text-align: left;
-                margin-left: 20%;
-                margin-right: 10%;
-            }
-        }
-    }
-        &:after {
-             margin: 0 auto;
-             display: block;
-             content:"";
-             background-color: lightgray;
-             height: 3px;
-             max-width: 90rem;
-        }
+  &:after {
+    margin: 0 auto;
+    display: block;
+    content: "";
+    background-color: lightgray;
+    height: 3px;
+    max-width: 90rem;
+  }
 }
 
 $feedback-test: #60677A;
-$feedback-job-color:  #A0A5B0;
+$feedback-job-color: #A0A5B0;
+
 .feedback {
-     margin-top: 4rem;
-    
-     header {
-         letter-spacing: -1rem;
-         .feedback-button {
-            padding: 1rem;
-            width: 12rem;
-            height: 4rem;
-            font-family: Arial, Sans-serif;
-            font-weight: bold;
-            border: 2px solid $feedback-test;
-            font-size: .8rem;
-         }
-         $feedback-button-radius: 4px;
-         .feedback-test {
-            @extend .feedback-button;
-            background-color: $feedback-test;
-            color: white;
-            border-radius: $feedback-button-radius 0 0 $feedback-button-radius;
-         }
+  margin-top: 4rem;
 
-         .feedback-recent {
-            background-color: $bg-color;
-            @extend .feedback-button;
-            color: $feedback-test;
-            border-radius: 0 $feedback-button-radius $feedback-button-radius 0;
-         }
-     }
+  header {
+    letter-spacing: -1rem;
 
-     .feedback-detail {
-         width: 60%;
-         max-width: 100rem;
-         margin: 3rem auto 0 auto;
-         .feedback-content {
-            font-family: Arial, Sans-serif;
-            font-size: 1.5rem;
-            color: $feedback-test;
-            line-height: 1.7rem;
-            font-weight: bold;
+    .feedback-button {
+      padding: 1rem;
+      width: 12rem;
+      height: 4rem;
+      font-family: Arial, Sans-serif;
+      font-weight: bold;
+      border: 2px solid $feedback-test;
+      font-size: .8rem;
+    }
 
-            &:before {
-                 font-family: serif;
-                 content: "“";
-                 display: block;
-                 height: 5rem;
-                 line-height: 5rem;
-                 width: 5rem;
-                 text-align: center;
-                 font-size: 5rem;
-                 margin: 0 auto;
-                 color: $secondy-text-color;
-            }
+    $feedback-button-radius: 4px;
 
-            &:after {
-                 content: "";
-                 display: block;
-                 width: 2rem;
-                 height: 2px;
-                 background-color: $secondy-text-color;
-                 margin: 2rem auto;
-            }
+    .feedback-test {
+      @extend .feedback-button;
 
-         }
+      background-color: $feedback-test;
+      color: white;
+      border-radius: $feedback-button-radius 0 0 $feedback-button-radius;
+    }
 
-         .feedback-name {
-              font-family: Arial, Sans-serif;
-              font-weight: bold;
-              font-size: 1.1rem;
-              color: $feedback-test;
-         }
+    .feedback-recent {
+      background-color: $bg-color;
 
-         .feedback-job {
-              margin: .8rem auto;
-              font-family: Arial, Sans-serif;
-              font-weight: bold;
-              font-size: 1.2rem;
-              color: $feedback-job-color;
-         }
-     }
-    
-     .feedback-pics {
-         margin: 3rem auto 0 auto;
-         overflow: hidden;
-         text-align: center;
-         width: 39%;
-         .feedback-pic {
-             margin: 6%;
-             padding: .4rem;
-             float: left;
-             width: 20%;
-             /*height: 8rem;*/
-             /*width: 7rem;*/
-             @include border-radius(100%);
-             box-sizing: border-box;
-             display: block;
-             opacity: .5;
-         }
+      @extend .feedback-button;
 
-         .pic-middle {
-              border: 3px solid $secondy-text-color;
-              opacity: 1;
-         }
-     }
+      color: $feedback-test;
+      border-radius: 0 $feedback-button-radius $feedback-button-radius 0;
+    }
+  }
+
+  .feedback-detail {
+    width: 60%;
+    max-width: 100rem;
+    margin: 3rem auto 0 auto;
+
+    .feedback-content {
+      font-family: Arial, Sans-serif;
+      font-size: 1.5rem;
+      color: $feedback-test;
+      line-height: 1.7rem;
+      font-weight: bold;
+
+      &:before {
+        font-family: serif;
+        content: "“";
+        display: block;
+        height: 5rem;
+        line-height: 5rem;
+        width: 5rem;
+        text-align: center;
+        font-size: 5rem;
+        margin: 0 auto;
+        color: $secondy-text-color;
+      }
+
+      &:after {
+        content: "";
+        display: block;
+        width: 2rem;
+        height: 2px;
+        background-color: $secondy-text-color;
+        margin: 2rem auto;
+      }
+    }
+
+    .feedback-name {
+      font-family: Arial, Sans-serif;
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: $feedback-test;
+    }
+
+    .feedback-job {
+      margin: .8rem auto;
+      font-family: Arial, Sans-serif;
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: $feedback-job-color;
+    }
+  }
+
+  .feedback-pics {
+    margin: 3rem auto 0 auto;
+    overflow: hidden;
+    text-align: center;
+    width: 39%;
+
+    .feedback-pic {
+      margin: 6%;
+      padding: .4rem;
+      float: left;
+      width: 20%;
+
+      /*height: 8rem;*/
+      /*width: 7rem;*/
+      @include border-radius(100%);
+
+      box-sizing: border-box;
+      display: block;
+      opacity: .5;
+    }
+
+    .pic-middle {
+      border: 3px solid $secondy-text-color;
+      opacity: 1;
+    }
+  }
 }
 
 .footer-search {
-     max-width: 80rem;
-     margin: 4rem auto 0 auto;
-     background: url('../images/footer-pic.jpg');
-     background-size: contain;
-     border: 0;
-     padding: 6rem;
-     overflow: hidden;
-     /*display: flex;*/
-     /*justify-content: center;*/
-     /*align-items: stretch;*/
-     .footer-side {
-         float: left;
-         font-family: Arial, Sans-serif;
-         /*font-size: 1.8rem;*/
-         font-size: 1.8rem;
-         font-weight: bold;
-         color: white;
-         margin-right: 1%;
-         vertical-align: middle;
-         height: 2rem;
-         line-height: 2rem;
-     }
+  max-width: 80rem;
+  margin: 4rem auto 0 auto;
+  background: url("../images/footer-pic.jpg");
+  background-size: contain;
+  border: 0;
+  padding: 6rem;
+  overflow: hidden;
+  text-align: center;
 
-     div {
-        float: left;
-        display: inline-block;
-        letter-spacing: -0.31rem;
-        width: 60%;
-     }
-     .footer-search-input {
-          padding-left: .5rem;
-          width: 75%;
-          height: 2.8rem;
-          border: 0;
-          border-radius: 4px 0 0 4px;
-          padding: 0 0 0 2%;
-          @include input-placeholder {
-               color: $title-color;
-               font-family: Arial, Sans-serif;
-          }
-     }
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*align-items: stretch;*/
+  ul {
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 60%;
+  }
 
-     .footer-search-button {
-         padding: 0;
-         height: 2.8rem;
-         width: 20%;
-         text-transform: uppercase;
-         font-family: Arial, Sans-serif;
-         font-weight: bold;
-         color: white;
-         background-color: $button-color;
-         border: 0;
-          border-radius: 0 4px 4px 0;
-     }
+  li {
+    float: left;
+    box-sizing: border-box;
+  }
+
+  li:first-child {
+    width: 30%;
+    padding-right: 2%;
+  }
+
+  li:last-child {
+    width: 70%;
+  }
+
+  .footer-side {
+    font-family: Arial, Sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    height: 2.8rem;
+    line-height: 2.8rem;
+    white-space: nowrap;
+  }
+
+  div {
+    letter-spacing: -0.31rem;
+    height: 2.8rem;
+
+    input {
+      float: left;
+      box-sizing: border-box;
+    }
+  }
+
+  .footer-search-input {
+    width: 75%;
+    padding-left: .5rem;
+    height: 2.8rem;
+    border: 0;
+    border-radius: 4px 0 0 4px;
+
+    @include input-placeholder {
+      color: $title-color;
+      font-family: Arial, Sans-serif;
+    }
+  }
+
+  .footer-search-button {
+    width: 25%;
+    padding: 0;
+    height: 2.8rem;
+    text-transform: uppercase;
+    font-family: Arial, Sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: $button-color;
+    border: 0;
+    border-radius: 0 4px 4px 0;
+  }
 }
 
 footer {
-    margin: 1.5rem auto;
-    width: 85%;
-    max-width: 80rem;
+  margin: 1.5rem auto;
+  width: 85%;
+  max-width: 80rem;
+  overflow: hidden;
 
+  ul {
     overflow: hidden;
-    ul {
-        overflow: hidden;
-        width: 65%;
-        float: left;
-        li {
-            float: left;
-            a {
-                line-height: 2rem;
-                text-decoration: none;
-                font-family: Arial, Sans-serif;
-                font-size: 1.3rem;
-                margin-right: .7rem;
-                color: $title-color;
-            }
-        }
+    width: 65%;
+    float: left;
+
+    li {
+      float: left;
+
+      a {
+        line-height: 2rem;
+        text-decoration: none;
+        font-family: Arial, Sans-serif;
+        font-size: 1.3rem;
+        margin-right: .7rem;
+        color: $title-color;
+      }
+    }
+  }
+
+  .tp-icons {
+    width: 15%;
+    float: right;
+
+    li {
+      float: right;
     }
 
-    .tp-icons {
-         width: 15%;
-         float: right;
-        
-         li {
-            float: right;
-         }
-         .icon-footer {
-            line-height: 2rem;
-            height: 2rem;
-             font-size: 1.5rem;
-         }
-         .icon-twitter:before {
-             margin-left: 1rem;
-             content:"\ea91";
-             color: #4D99CB;
-         }
-
-         .icon-facebook:before {
-             content: "\ea8c";
-             color: #4C73B6;
-         }
+    .icon-footer {
+      line-height: 2rem;
+      height: 2rem;
+      font-size: 1.5rem;
     }
 
+    .icon-twitter:before {
+      margin-left: 1rem;
+      content: "\ea91";
+      color: #4D99CB;
+    }
+
+    .icon-facebook:before {
+      content: "\ea8c";
+      color: #4C73B6;
+    }
+  }
 }
