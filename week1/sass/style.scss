@@ -30,7 +30,7 @@ body {
     margin: 0 auto;
     /*padding-bottom: 10%;*/
     padding-bottom: 12rem;
-    background: url('images/hero.png');
+    background: url('../images/hero.png');
     background-size: cover;
 
     header {
@@ -460,7 +460,7 @@ $feedback-job-color:  #A0A5B0;
 .footer-search {
      max-width: 80rem;
      margin: 4rem auto 0 auto;
-     background: url('images/footer-pic.jpg');
+     background: url('../images/footer-pic.jpg');
      background-size: contain;
      border: 0;
      /*opacity: .5;*/
