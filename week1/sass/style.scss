@@ -470,21 +470,22 @@ $feedback-job-color:  #A0A5B0;
      /*align-items: stretch;*/
      .footer-side {
          font-family: Arial, Sans-serif;
-         font-size: 1.8rem;
+         /*font-size: 1.8rem;*/
+         font-size: 1em;
          font-weight: bold;
          color: white;
-         margin-right: 1.5rem;
+         margin-right: 1%;
          vertical-align: middle;
      }
 
      div {
         display: inline-block;
         letter-spacing: -0.31rem;
+        width: 60%;
      }
      .footer-search-input {
-          /*padding: .5rem 2rem .5rem .5rem;*/
           padding-left: .5rem;
-          width: 25rem;
+          width: 75%;
           height: 2.8rem;
           border: 0;
           border-radius: 4px 0 0 4px;
@@ -498,7 +499,7 @@ $feedback-job-color:  #A0A5B0;
      .footer-search-button {
          padding: 0;
          height: 2.8rem;
-         width: 6rem;
+         width: 20%;
          text-transform: uppercase;
          font-family: Arial, Sans-serif;
          font-weight: bold;
