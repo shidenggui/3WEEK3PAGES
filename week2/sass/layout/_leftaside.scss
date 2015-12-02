@@ -1,0 +1,14 @@
+@import "../base/vars";
+
+.page-left-aside {
+  float: left;
+  border: 5px solid black;
+  
+  a {
+    text-decoration: none;
+  }
+  .item {
+    float: left;
+
+  }
+}

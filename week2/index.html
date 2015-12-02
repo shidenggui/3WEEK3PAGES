@@ -3,23 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+    <link rel="stylesheet" href="./stylesheets/main.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="menus">
-                <li><a class="compose" href=""></a></li>
-                <li><a class="alert" href=""></a></li>
-                <li><a class="email" href=""></a></li>
-                <li><a class="tag" href=""></a></li>
-                <span class="logo"></span>
-            </ul>
-        </nav>
-    </header>
-    <aside>
-        <div class="profile"></div>
-        <div class="gallery"></div>
-        <div class="activitles"></div>
-    </aside>
+<header class="page-header">
+    <nav>
+        <ul class="menus">
+            <li class="item"><a class="compose" href=""><i class="icon icon-quill"></i></a></li>
+            <li class="item"><a class="alert" href=""><i class="icon icon-bell"></i></a></li>
+            <li class="item"><a class="email" href=""><i class="icon icon-quill"></i></a></li>
+            <li class="item"><a class="tag" href=""><i class="icon icon-quill"></i></a></li>
+        </ul>
+        <span class="logo"></span>
+    </nav>
+</header>
+<aside class="page-left-aside">
+    <div class="profile"></div>
+    <div class="gallery"></div>
+    <div class="activities"></div>
+</aside>
+<section class="content">
+    <nav class="info">
+        <ul>
+            <li class="item">
+                <h4>Tweets</h4>
+                <p>200</p>
+            </li>
+            <li class="item">
+                <h4>Photo/Videos</h4>
+                <p>250</p>
+            </li>
+            <li class="item">
+                <h4>Following</h4>
+                <p>55</p>
+            </li>
+            <li class="item">
+                <h4>Followers</h4>
+                <p>180</p>
+            </li>
+        </ul>
+    </nav>
+    <div class="articles">
+        <article class="post">
+            <img src="./images/avator.jpg" alt="" class="avator">
+            <section class="content">
+                <header>
+                    <span class="name">fly2sky</span>
+                    <span class="account">@shidenggui</span>
+                    <span class="time">2m</span>
+                </header>
+                <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus veniam quas,
+                    deserunt! Provident sit, impedit, facilis molestias minus quas hic ad deserunt quia, alias velit
+                    architecto debitis itaque doloremque quaerat.</p>
+                <footer>
+                    <nav>
+                        <a href=" "><i class="icon icon-redo"></i></a>
+                        <a href=""><i class="icon icon-star"></i></a>
+                        <a href=""><i class="icon icon-loop"></i></a>
+                        <a href=""><i class="icon icon-ellipsis"></i></a>
+                        <a href=""><i class="icon icon-maximize"></i></a>
+                    </nav>
+                </footer>
+            </section>
+        </article>
+        <article></article>
+        <article></article>
+        <article></article>
+    </div>
+</section>
+<aside>
+    <div class="trends"></div>
+    <div class="to-follow"></div>
+</aside>
+<footer class="copyright"></footer>
 </body>
 </html>

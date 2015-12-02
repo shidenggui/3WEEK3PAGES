@@ -1,0 +1,15 @@
+
+@mixin seticon($value) {
+  &:before {
+    display: block;
+    content: $value;
+  }
+}
+// page header icon
+.icon-quill {
+  @include seticon('\e907');
+}
+
+.icon-bell {
+  @include seticon('\e951');
+}
