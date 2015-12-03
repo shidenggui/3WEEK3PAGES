@@ -36,12 +36,12 @@ body {
 }
 
 section {
-  font-size: .8rem;
+  font-size: 1.4rem;
 }
 
 .page-content {
   margin-top: 3rem;
-  margin-left: 14rem;
+  margin-left: 25rem;
 }
 
 .info {
@@ -58,7 +58,7 @@ section {
     li {
       box-sizing: border-box;
       float: left;
-      padding: 1rem;
+      padding: 2rem;
       width: 25%;
 
       @include response-to(handhelds) {
@@ -74,8 +74,8 @@ section {
 
   .item {
     border-bottom: 5px solid $post-bg-color;
-    font-size: .9rem;
-    line-height: 1.3rem;
+    font-size: 1.6rem;
+    line-height: 2rem;
     text-align: center;
     text-shadow: .1px .1px .2px;
 

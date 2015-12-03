@@ -222,107 +222,113 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 3, ../sass/layout/_leftaside.scss */
 .page-left-aside {
-  font-family: Arial, sans-serif;
   text-shadow: 0 0 1px lightgray;
+  -moz-box-shadow: 0 0 1px gray;
+  -webkit-box-shadow: 0 0 1px gray;
+  box-shadow: 0 0 1px gray;
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
   float: left;
-  width: 14rem;
+  width: 24rem;
   background-color: #80A8CC;
   color: white;
 }
-/* line 11, ../sass/layout/_leftaside.scss */
+/* line 15, ../sass/layout/_leftaside.scss */
 .page-left-aside .profile {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-/* line 17, ../sass/layout/_leftaside.scss */
+/* line 21, ../sass/layout/_leftaside.scss */
 .page-left-aside .profile .avator {
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
   border-radius: 100%;
-  height: 5rem;
-  width: 5rem;
-  margin: 2rem 0 .5rem;
+  height: 9rem;
+  width: 9rem;
+  margin: 4rem 0 1rem;
 }
-/* line 25, ../sass/layout/_leftaside.scss */
+/* line 29, ../sass/layout/_leftaside.scss */
 .page-left-aside .profile .name {
   font-weight: bold;
-  font-size: 1rem;
-  padding: .5rem 0;
+  font-size: 1.6rem;
+  padding: .8rem 0;
 }
-/* line 33, ../sass/layout/_leftaside.scss */
+/* line 35, ../sass/layout/_leftaside.scss */
 .page-left-aside .profile .intro {
   font-weight: lighter;
   width: 85%;
-  line-height: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
   text-align: center;
 }
-/* line 41, ../sass/layout/_leftaside.scss */
+/* line 44, ../sass/layout/_leftaside.scss */
 .page-left-aside .profile .link {
-  font-size: .8rem;
+  font-size: 1.2rem;
   margin: 1rem 0 0;
 }
-/* line 46, ../sass/layout/_leftaside.scss */
+/* line 48, ../sass/layout/_leftaside.scss */
 .page-left-aside .profile .link a {
   color: white;
   text-decoration: none;
   outline: none;
 }
-/* line 53, ../sass/layout/_leftaside.scss */
+/* line 55, ../sass/layout/_leftaside.scss */
 .page-left-aside .profile .follow {
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
   text-shadow: 0 0 1px lightgray;
   font-weight: lighter;
   color: white;
   background-color: #6C94B8;
   border: 0;
-  padding: .5rem 2.5rem;
-  margin: 1rem 0 1rem;
+  font-size: 1.2rem;
+  padding: 1rem 4.5rem;
+  margin: 1.8rem 0 2rem;
 }
-/* line 68, ../sass/layout/_leftaside.scss */
+/* line 71, ../sass/layout/_leftaside.scss */
 .page-left-aside .gallery .album {
   overflow: hidden;
 }
-/* line 71, ../sass/layout/_leftaside.scss */
+/* line 74, ../sass/layout/_leftaside.scss */
 .page-left-aside .gallery .album .album-pic {
   width: 33.3%;
-  height: 4.5rem;
+  height: 6.5rem;
   float: left;
   box-sizing: border-box;
   border: 0;
 }
-/* line 81, ../sass/layout/_leftaside.scss */
+/* line 84, ../sass/layout/_leftaside.scss */
 .page-left-aside .activities {
   padding-bottom: 2rem;
 }
-/* line 83, ../sass/layout/_leftaside.scss */
+/* line 86, ../sass/layout/_leftaside.scss */
 .page-left-aside .activities .title {
-  font-size: .9rem;
+  font-size: 1.4rem;
   margin: 1.4rem 0 0 1.5rem;
 }
-/* line 88, ../sass/layout/_leftaside.scss */
+/* line 91, ../sass/layout/_leftaside.scss */
 .page-left-aside .activities .list {
-  font-size: .7rem;
-  margin: .5rem 0 0 1.5rem;
+  font-size: 1.2rem;
+  margin: .7rem 0 0 1.5rem;
 }
-/* line 92, ../sass/layout/_leftaside.scss */
+/* line 95, ../sass/layout/_leftaside.scss */
 .page-left-aside .activities .list li {
-  margin-bottom: .45rem;
+  margin-bottom: .75rem;
 }
-/* line 96, ../sass/layout/_leftaside.scss */
+/* line 99, ../sass/layout/_leftaside.scss */
 .page-left-aside .activities .list i, .page-left-aside .activities .list span {
   margin-right: .6rem;
   color: #3b6992;
   text-shadow: 0 0 0;
   opacity: .5;
 }
-/* line 103, ../sass/layout/_leftaside.scss */
+/* line 106, ../sass/layout/_leftaside.scss */
 .page-left-aside .activities .list .active {
   margin-right: 0.15rem;
 }
-/* line 106, ../sass/layout/_leftaside.scss */
+/* line 109, ../sass/layout/_leftaside.scss */
 .page-left-aside .activities .list .target {
   color: white !important;
   opacity: 1 !important;
@@ -364,13 +370,13 @@ body {
 
 /* line 38, ../sass/main.scss */
 section {
-  font-size: .8rem;
+  font-size: 1.4rem;
 }
 
 /* line 42, ../sass/main.scss */
 .page-content {
   margin-top: 3rem;
-  margin-left: 14rem;
+  margin-left: 25rem;
 }
 
 /* line 47, ../sass/main.scss */
@@ -389,7 +395,7 @@ section {
 .info ul li {
   box-sizing: border-box;
   float: left;
-  padding: 1rem;
+  padding: 2rem;
   width: 25%;
 }
 @media only screen and (max-width: 420px) {
@@ -408,8 +414,8 @@ section {
 /* line 75, ../sass/main.scss */
 .info .item {
   border-bottom: 5px solid #FFFBF5;
-  font-size: .9rem;
-  line-height: 1.3rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
   text-align: center;
   text-shadow: .1px .1px .2px;
 }
