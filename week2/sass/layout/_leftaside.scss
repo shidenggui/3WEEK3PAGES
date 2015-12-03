@@ -1,6 +1,13 @@
 @import "../base/vars";
+@import "../base/funcs";
 
 .page-left-aside {
+  @include response-to(medium-screens) {
+    display: none;
+  }
+  @include response-to(wide-screens) {
+    width: 25rem;
+  }
   @include text-shadow(0 0 1px lightgray);
   @include box-shadow(0 0 1px gray);
 
@@ -13,6 +20,8 @@
   background-color: $light-blue-bg-color;
 
   color: white;
+  
+  
   .profile {
 
     display: flex;

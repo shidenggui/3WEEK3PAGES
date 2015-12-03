@@ -2,6 +2,7 @@
 @import "compass/reset";
 
 @import "base/vars";
+@import "base/funcs";
 
 @import "components/icon";
 
@@ -9,25 +10,6 @@
 @import "layout/leftaside";
 
 @import "vendor/iconmoon";
-$break-small: 420px;
-$break-large: 800px;
-
-// 实现响应式布局的nd (max-width: $break-small) {
-@mixin response-to($media) {
-  @if $media == handhelds {
-    @media only screen and (max-width: $break-small) {
-      @content;
-    }
-  } @else if $media == medium-screens {
-    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) {
-      @content;
-    }
-  } @else if $media == wide-screens {
-    @media only screen and (min-width: $break-large) {
-      @content;
-    }
-  }
-}
 
 body {
   background-color: $content-bg-color;
@@ -41,8 +23,15 @@ section {
 
 .page-content {
   margin-top: 3rem;
-  //margin-left: 25rem;
-  margin-left: 25%;
+  margin-left: 25rem;
+
+  @include response-to(medium-screens) {
+    margin-left: 0;
+  }
+
+  @include response-to(wide-screens) {
+    margin-left: 25rem;
+  }
 }
 
 .info {
