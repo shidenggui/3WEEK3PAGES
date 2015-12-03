@@ -138,13 +138,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 12, ../sass/layout/_page_header.scss */
 .page-header .menus .item {
   float: left;
-  margin: 0 0 0 1rem;
-  padding: 1.3rem 0;
+  margin: 0 0 0 2rem;
+  padding: 2rem 0;
 }
 /* line 16, ../sass/layout/_page_header.scss */
 .page-header .menus .item:first-child {
   border-right: 1px solid lightgray;
-  padding-right: 1rem;
+  padding-right: 2rem;
 }
 /* line 20, ../sass/layout/_page_header.scss */
 .page-header .menus .item a {
@@ -154,7 +154,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .page-header .menus .item a .icon {
   border: 1px solid lightgray;
   color: #666666;
-  font-size: .6rem;
+  font-size: 1.4rem;
   padding: .6rem;
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
@@ -176,7 +176,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 47, ../sass/layout/_page_header.scss */
 .logo .icon-twitter {
-  font-size: 1.8rem;
+  font-size: 2.8rem;
   color: #80A8CC;
 }
 
@@ -192,31 +192,34 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 64, ../sass/layout/_page_header.scss */
 .page-header .search {
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
   -moz-box-shadow: 0px 0px 2px lightgray;
   -webkit-box-shadow: 0px 0px 2px lightgray;
   box-shadow: 0px 0px 2px lightgray;
-  padding-left: .2rem;
-  right: 3.2rem;
+  padding: .7rem;
+  padding-left: 1.8rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  right: 5.2rem;
   border: 1px solid lightgray;
 }
-/* line 71, ../sass/layout/_page_header.scss */
+/* line 74, ../sass/layout/_page_header.scss */
 .page-header .search:hover {
   border: 0;
 }
-/* line 74, ../sass/layout/_page_header.scss */
+/* line 77, ../sass/layout/_page_header.scss */
 .page-header .search:focus {
   outline: none;
 }
-/* line 79, ../sass/layout/_page_header.scss */
+/* line 82, ../sass/layout/_page_header.scss */
 .page-header .avator {
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
   border-radius: 100%;
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 3.5rem;
+  height: 3.5rem;
   right: .5rem;
 }
 

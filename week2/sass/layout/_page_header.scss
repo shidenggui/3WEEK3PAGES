@@ -11,18 +11,18 @@
     float: left;
     .item {
       float: left;
-      margin: 0 0 0 1rem;
-      padding: 1.3rem 0;
+      margin: 0 0 0 2rem;
+      padding: 2rem 0;
       &:first-child {
         border-right: 1px solid lightgray;
-        padding-right: 1rem;
+        padding-right: 2rem;
       }
       a {
         text-decoration: none;
         .icon {
           border: 1px solid lightgray;
           color: $boldlightdark-text-color;
-          font-size: .6rem;
+          font-size: 1.4rem;
           padding: .6rem;
           @include border-radius(100%);
         }
@@ -45,7 +45,7 @@
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     .icon-twitter {
-      font-size: 1.8rem;
+      font-size: 2.8rem;
       color: $light-blue-bg-color;
     }
     
@@ -63,10 +63,13 @@
    }
    .search {
      @extend .vertical-center;
-     @include border-radius(5px);
+     @include border-radius(30px);
      @include box-shadow(0px 0px 2px lightgray);
-     padding-left: .2rem;
-     right: 3.2rem;
+     padding: .7rem;
+     padding-left: 1.8rem;
+     font-size: 1.4rem;
+     text-transform: uppercase;
+     right: 5.2rem;
      border: 1px solid lightgray;
      &:hover {
        border: 0;
@@ -79,8 +82,8 @@
    .avator {
      @extend .vertical-center;
      @include border-radius(100%);
-     width: 1.8rem;
-     height: 1.8rem;
+     width: 3.5rem;
+     height: 3.5rem;
      right: .5rem;
    }
   }
