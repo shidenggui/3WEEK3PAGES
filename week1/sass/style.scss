@@ -6,11 +6,11 @@
 
 $highlight-text-color: #ffffff;
 $button-color: #67DDAB;
-$search-text-color: #9A9DA7;
-$bg-color: #F4F3F1;
-$secondy-text-color: #D9DADA;
-$secondy-text-opacity-color: rgba(217, 218, 218, 0.3);
-$title-color: #60677A;
+$search-text-color: #9A9D #F4F3F1;
+$secondyor:condy-text-opacity-c-text-color: #D9DADA;
+$se0.3);
+$title-color: rgba(217, 218, 218, A7;
+$bg-cololor: #60677A;
 
 $icon-quick: #66BE96;
 $icon-easy: #ECA95A;
@@ -20,20 +20,20 @@ $icon-comprehensive: #F26D7E;
 $icon-awesome: #ED7F5B;
 
 body {
-  font-size: 62.5%;
-  text-align: center;
   background-color: $bg-color;
+  font-size: 62.5%;
   max-width: 125rem;
+  text-align: center;
 }
 
 .hero {
-  max-width: 95rem;
-  margin: 0 auto;
-
-  /*padding-bottom: 10%;*/
-  padding-bottom: 12rem;
   background: url("../images/hero.png");
   background-size: cover;
+
+  /*padding-bottom: 10%;*/
+  margin: 0 auto;
+  max-width: 95rem;
+  padding-bottom: 12rem;
 
   header {
     img {
@@ -44,18 +44,18 @@ body {
     }
 
     ul {
-      float: right;
       color: white;
+      float: right;
       padding: 0 8rem;
 
       li {
+        border: 1px solid transparent;
+        border-radius: 3px;
+        float: left;
         font-family: Arial, Sans-serif;
         font-size: 1.1rem;
-        float: left;
-        border: 1px solid transparent;
-        padding: 0.5rem .5rem;
         margin: 1rem 0;
-        border-radius: 3px;
+        padding: 0.5rem .5rem;
 
         &:last-child {
           border: 1px solid $highlight-text-color;
@@ -69,34 +69,34 @@ body {
   }
 
   h1 {
-    font-family: Arial, serif;
-    font-weight: bold;
-    font-size: 1.8rem;
     color: white;
-    margin-top: 15rem;
+    font-family: Arial, serif;
+    font-size: 1.8rem;
+    font-weight: bold;
     margin-bottom: .8rem;
+    margin-top: 15rem;
   }
 
   h2 {
+    color: #B0B2B9;
     font-family: Arial, serif;
     font-size: 1.1rem;
-    color: #B0B2B9;
   }
 
   form {
-    padding: 1.5rem 0 15rem 0;
-
-    /*@include inline-block;*/
     letter-spacing: -0.31em;
 
+    /*@include inline-block;*/
+    padding: 1.5rem 0 15rem 0;
+
     input[type="text"] {
-      font-size: 1.2rem;
-      padding: 1.36rem 0rem 1.5rem 1rem;
+      background-color: $secondy-text-opacity-color;
       border: 0;
-      width: 35%;
       border-radius: 5px 0 0 5px;
       color: white;
-      background-color: $secondy-text-opacity-color;
+      font-size: 1.2rem;
+      padding: 1.36rem 0rem 1.5rem 1rem;
+      width: 35%;
 
       @include input-placeholder {
         color: white;
@@ -104,31 +104,31 @@ body {
     }
 
     input[type="button"] {
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 1rem;
-      font-family: Arial, serif;
-      text-align: center;
-      color: $highlight-text-color;
-      padding: 1.5rem 2rem;
-      border: 0;
       background-color: $button-color;
+      border: 0;
       border-radius: 0 5px 5px 0;
+      color: $highlight-text-color;
+      font-family: Arial, serif;
+      font-size: 1rem;
+      font-weight: bold;
+      padding: 1.5rem 2rem;
+      text-align: center;
+      text-transform: uppercase;
     }
   }
 }
 
 .numbers {
   margin: 0 auto;
-  width: 70%;
   max-width: 70rem;
+  width: 70%;
 
   ul {
-    position: relative;
-    top: -7rem;
     background: $bg-color;
     border-radius: 5px;
     margin: 0 auto;
+    position: relative;
+    top: -7rem;
 
     li {
       border-bottom: 3px solid $secondy-text-color;
@@ -152,9 +152,9 @@ body {
       }
 
       h3 {
+        color: gray;
         font-family: Arial, serif;
         font-size: 1.1rem;
-        color: gray;
         padding: 0 0 1.8rem 0;
       }
     }
@@ -171,79 +171,79 @@ body {
   text-transform: uppercase;
 
   &:after {
+    background-color: lightgray;
     content: '';
     display: block;
-    background-color: lightgray;
-    width: 3rem;
     height: .2rem;
+    margin: 0.4rem auto 0 auto;
 
     @include border-radius(3px);
 
-    margin: 0.4rem auto 0 auto;
+    width: 3rem;
   }
 }
 
 .how-it-works {
-  max-width: 90rem;
-  margin: 0 auto;
   background-color: $bg-color;
+  margin: 0 auto;
+  max-width: 90rem;
 
   ul {
     margin: 4em 0 8em 0;
     overflow: auto;
 
     li {
-      &:before {
-        display: block;
-        content: "";
+      &:before box-sizing: border-box
+
+      &:last-child:before float: left
+
+      width: 33.3%;
+      {
         background-color: lightgray;
+        content: "";
+        display: block;
         height: 3px;
-        position: relative;
-        top: 3.5rem;
         left: 50%;
         margin: 0 2rem 0 2.0rem;
-      }
-
-      &:last-child:before {
+        position: relative;
+        top: 3.5rem;
+      };
+      {
         display: none;
-      }
-
-      float: left;
-      width: 33.3%;
-      box-sizing: border-box;
+      };
 
       .number {
-        font-size: 1.8rem;
-        color: gray;
         border: 3px solid lightgray;
-        width: 2.5rem;
-        height: 2.5rem;
+        color: gray;
         display: block;
+        font-family: Arial, serif;
+        font-size: 1.8rem;
+        font-weight: bold;
+        height: 2.5rem;
         line-height: 2.5rem;
         margin: 1rem auto 4rem auto;
         padding: .4em;
-        font-family: Arial, serif;
-        font-weight: bold;
+        width: 2.5rem;
 
         @include border-radius(100%);
       }
 
       p {
+        color: darkgray;
         font-family: serif;
         font-size: 1.2rem;
-        color: darkgray;
-        text-align: center;
         line-height: 1.7rem;
         margin: auto;
+        text-align: center;
         width: 80%;
       }
     }
   }
 
   &:after {
+    background-color: lightgray;
     content: "";
     display: block;
-    background-color: lightgray;
     height: 2px;
     max-width: 100rem;
   }
@@ -254,9 +254,9 @@ body {
 }
 
 .icon-profile:before {
-  margin: 2rem auto;
   color: #ECA95A;
   content: "\e923";
+  margin: 2rem auto;
 }
 
 .icon-pencil:before {
@@ -270,41 +270,41 @@ body {
 }
 
 .icon-title {
-  margin: 2rem auto 1rem auto;
+  color: $title-color;
   font-family: Arial, Sans-serif;
   font-size: 2rem;
   font-weight: bold;
-  color: $title-color;
+  margin: 2rem auto 1rem auto;
 }
 
 .icon-quick:before {
-  content: "\ea10";
   color: $icon-quick;
+  content: "\ea10";
 }
 
 .icon-easy:before {
-  content: "\ea2e";
   color: $icon-easy;
+  content: "\ea2e";
 }
 
 .icon-free:before {
-  content: "\e935";
   color: $icon-free;
+  content: "\e935";
 }
 
 .icon-independent:before {
-  content: "\e971";
   color: $icon-independent;
+  content: "\e971";
 }
 
 .icon-comprehensive:before {
-  content: "\e922";
   color: $icon-comprehensive;
+  content: "\e922";
 }
 
 .icon-awesome:before {
-  content: "\e9d9";
   color: $icon-awesome;
+  content: "\e9d9";
 }
 
 .icon-small {
@@ -312,30 +312,30 @@ body {
 }
 
 .why-choose-us {
-  max-width: 100rem;
   margin: 5rem auto 0 auto;
+  max-width: 100rem;
 
   .title {
     margin-bottom: 5rem;
   }
 
   ul {
+    margin: 0 auto;
     max-width: 100rem;
     width: 85%;
-    margin: 0 auto;
 
     li {
-      display: inline-block;
       box-sizing: border-box;
-      width: 45%;
+      display: inline-block;
       margin-bottom: 2rem;
       margin-left: 3%;
+      width: 45%;
 
       .icon {
-        width: 20%;
-        height: 100%;
-        float: left;
         display: inline-block;
+        float: left;
+        height: 100%;
+        width: 20%;
       }
 
       .icon-title {
@@ -345,23 +345,23 @@ body {
 
       p {
         clear: both;
+        color: darkgray;
         font-family: Arial, Sans-serif;
         font-size: 1.2rem;
-        color: darkgray;
         line-height: 1.5rem;
-        text-align: left;
         margin-left: 20%;
         margin-right: 10%;
+        text-align: left;
       }
     }
   }
 
   &:after {
-    margin: 0 auto;
-    display: block;
-    content: "";
     background-color: lightgray;
+    content: "";
+    display: block;
     height: 3px;
+    margin: 0 auto;
     max-width: 90rem;
   }
 }
@@ -376,13 +376,13 @@ $feedback-job-color: #A0A5B0;
     letter-spacing: -1rem;
 
     .feedback-button {
+      border: 2px solid $feedback-test;
+      font-family: Arial, Sans-serif;
+      font-size: .8rem;
+      font-weight: bold;
+      height: 4rem;
       padding: 1rem;
       width: 12rem;
-      height: 4rem;
-      font-family: Arial, Sans-serif;
-      font-weight: bold;
-      border: 2px solid $feedback-test;
-      font-size: .8rem;
     }
 
     $feedback-button-radius: 4px;
@@ -391,8 +391,8 @@ $feedback-job-color: #A0A5B0;
       @extend .feedback-button;
 
       background-color: $feedback-test;
-      color: white;
       border-radius: $feedback-button-radius 0 0 $feedback-button-radius;
+      color: white;
     }
 
     .feedback-recent {
@@ -400,59 +400,59 @@ $feedback-job-color: #A0A5B0;
 
       @extend .feedback-button;
 
-      color: $feedback-test;
       border-radius: 0 $feedback-button-radius $feedback-button-radius 0;
+      color: $feedback-test;
     }
   }
 
   .feedback-detail {
-    width: 60%;
-    max-width: 100rem;
     margin: 3rem auto 0 auto;
+    max-width: 100rem;
+    width: 60%;
 
     .feedback-content {
+      color: $feedback-test;
       font-family: Arial, Sans-serif;
       font-size: 1.5rem;
-      color: $feedback-test;
-      line-height: 1.7rem;
       font-weight: bold;
+      line-height: 1.7rem;
 
       &:before {
-        font-family: serif;
+        color: $secondy-text-color;
         content: "“";
         display: block;
+        font-family: serif;
+        font-size: 5rem;
         height: 5rem;
         line-height: 5rem;
-        width: 5rem;
-        text-align: center;
-        font-size: 5rem;
         margin: 0 auto;
-        color: $secondy-text-color;
+        text-align: center;
+        width: 5rem;
       }
 
       &:after {
+        background-color: $secondy-text-color;
         content: "";
         display: block;
-        width: 2rem;
         height: 2px;
-        background-color: $secondy-text-color;
         margin: 2rem auto;
+        width: 2rem;
       }
     }
 
     .feedback-name {
-      font-family: Arial, Sans-serif;
-      font-weight: bold;
-      font-size: 1.1rem;
       color: $feedback-test;
+      font-family: Arial, Sans-serif;
+      font-size: 1.1rem;
+      font-weight: bold;
     }
 
     .feedback-job {
-      margin: .8rem auto;
-      font-family: Arial, Sans-serif;
-      font-weight: bold;
-      font-size: 1.2rem;
       color: $feedback-job-color;
+      font-family: Arial, Sans-serif;
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: .8rem auto;
     }
   }
 
@@ -463,18 +463,18 @@ $feedback-job-color: #A0A5B0;
     width: 39%;
 
     .feedback-pic {
-      margin: 6%;
-      padding: .4rem;
+      box-sizing: border-box;
+      display: block;
       float: left;
-      width: 20%;
+      margin: 6%;
 
       /*height: 8rem;*/
       /*width: 7rem;*/
       @include border-radius(100%);
 
-      box-sizing: border-box;
-      display: block;
       opacity: .5;
+      padding: .4rem;
+      width: 20%;
     }
 
     .pic-middle {
@@ -485,33 +485,33 @@ $feedback-job-color: #A0A5B0;
 }
 
 .footer-search {
-  max-width: 80rem;
-  margin: 4rem auto 0 auto;
   background: url("../images/footer-pic.jpg");
   background-size: contain;
   border: 0;
-  padding: 6rem;
+  margin: 4rem auto 0 auto;
+  max-width: 80rem;
   overflow: hidden;
+  padding: 6rem;
   text-align: center;
 
   /*display: flex;*/
   /*justify-content: center;*/
   /*align-items: stretch;*/
   ul {
-    text-align: center;
-    overflow: hidden;
     margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
     width: 85%;
   }
 
   li {
-    float: left;
     box-sizing: border-box;
+    float: left;
   }
 
   li:first-child {
-    width: 30%;
     padding-right: 2%;
+    width: 30%;
   }
 
   li:last-child {
@@ -519,31 +519,31 @@ $feedback-job-color: #A0A5B0;
   }
 
   .footer-side {
+    color: white;
     font-family: Arial, Sans-serif;
     font-size: 1.3rem;
     font-weight: bold;
-    color: white;
     height: 2.8rem;
     line-height: 2.8rem;
     white-space: nowrap;
   }
 
   div {
-    letter-spacing: -0.31rem;
     height: 2.8rem;
+    letter-spacing: -0.31rem;
 
     input {
-      float: left;
       box-sizing: border-box;
+      float: left;
     }
   }
 
   .footer-search-input {
-    width: 75%;
-    padding-left: .5rem;
-    height: 2.8rem;
     border: 0;
     border-radius: 4px 0 0 4px;
+    height: 2.8rem;
+    padding-left: .5rem;
+    width: 75%;
 
     @include input-placeholder {
       color: $title-color;
@@ -552,16 +552,16 @@ $feedback-job-color: #A0A5B0;
   }
 
   .footer-search-button {
-    width: 25%;
-    padding: 0;
-    height: 2.8rem;
-    text-transform: uppercase;
-    font-family: Arial, Sans-serif;
-    font-weight: bold;
-    color: white;
     background-color: $button-color;
     border: 0;
     border-radius: 0 4px 4px 0;
+    color: white;
+    font-family: Arial, Sans-serif;
+    font-weight: bold;
+    height: 2.8rem;
+    padding: 0;
+    text-transform: uppercase;
+    width: 25%;
   }
 }
 

@@ -1,10 +1,9 @@
-
 @mixin seticon($value) {
   &:before {
-    display: block;
     content: $value;
   }
 }
+
 // page header icon
 .icon-quill {
   @include seticon('\e907');
@@ -12,4 +11,48 @@
 
 .icon-bell {
   @include seticon('\e951');
+}
+
+.icon-email {
+  @include seticon('\ea84');
+}
+
+.icon-cog {
+  @include seticon('\e994');
+}
+
+.icon-twitter {
+  &:before {
+    content: '\ea91';
+  }
+}
+
+.icon-link {
+  &:before {
+    content: '\e9cb';
+  }
+}
+
+.icon-redo {
+  &:before {
+    content: '\e968';
+  }
+}
+
+.icon-star {
+  &:before {
+    content: '\e9d9';
+  }
+}
+
+.icon-loop:before {
+  content: '\ea2e';
+}
+
+.icon-ellipsis:before {
+  content: '\e935';
+}
+
+.icon-maximize:before {
+  content: '\e98b';
 }

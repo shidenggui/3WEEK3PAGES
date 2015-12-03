@@ -1,8 +1,88 @@
+@import "../base/vars";
 
 .page-header {
-  a {
-    text-decoration: none;
+  @include box-shadow(0px 0px 2px lightgray);
+  position: relative;
+  background-color: $post-bg-color;
+  nav {
+    overflow: hidden;
+  }
+  .menus {
+    float: left;
+    .item {
+      float: left;
+      margin: 0 0 0 1rem;
+      padding: 1.3rem 0;
+      &:first-child {
+        border-right: 1px solid lightgray;
+        padding-right: 1rem;
+      }
+      a {
+        text-decoration: none;
+        .icon {
+          border: 1px solid lightgray;
+          color: $boldlightdark-text-color;
+          font-size: .6rem;
+          padding: .6rem;
+          @include border-radius(100%);
+        }
+        
+        .icon-quill {
+          border: 0;
+          background-color: $light-blue-bg-color;
+          color: white;
+        }
+      }
+
+      }
+    }
+  
   }
 
-  border: 10px solid;
+  .logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    .icon-twitter {
+      font-size: 1.8rem;
+      color: $light-blue-bg-color;
+    }
+    
 }
+  
+.page-header {
+
+  nav {
+    position: relative;
+  }
+   .vertical-center {
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+   }
+   .search {
+     @extend .vertical-center;
+     @include border-radius(5px);
+     @include box-shadow(0px 0px 2px lightgray);
+     padding-left: .2rem;
+     right: 3.2rem;
+     border: 1px solid lightgray;
+     &:hover {
+       border: 0;
+     }
+     &:focus {
+       outline: none;
+     }
+   }
+  
+   .avator {
+     @extend .vertical-center;
+     @include border-radius(100%);
+     width: 1.8rem;
+     height: 1.8rem;
+     right: .5rem;
+   }
+  }
+
+

@@ -13,715 +13,785 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
 }
 
 /* line 22, ../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
-  line-height: 1;
+    line-height: 1;
 }
 
 /* line 24, ../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
-  list-style: none;
+    list-style: none;
 }
 
 /* line 26, ../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* line 28, ../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
+    font-weight: normal;
+    text-align: left;
+    vertical-align: middle;
 }
 
 /* line 30, ../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
-  quotes: none;
+    quotes: none;
 }
+
 /* line 103, ../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
+    content: "";
+    content: none;
 }
 
 /* line 32, ../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
-  border: none;
+    border: none;
 }
 
 /* line 116, ../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
+    display: block;
 }
 
 @font-face {
-  font-family: 'IcoMoon-Free';
-  src: url("../fonts/IcoMoon-Free.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'IcoMoon-Free';
+    src: url("../fonts/IcoMoon-Free.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
+
 /* line 8, ../sass/iconmoon.scss */
 .icon {
-  font-family: 'IcoMoon-Free';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Enable Ligatures ================ */
-  -webkit-font-feature-settings: "liga";
-  -moz-font-feature-settings: "liga=1";
-  -moz-font-feature-settings: "liga";
-  -ms-font-feature-settings: "liga" 1;
-  -o-font-feature-settings: "liga";
-  font-feature-settings: "liga";
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: 'IcoMoon-Free';
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    text-transform: none;
+    speak: none;
+    /* Enable Ligatures ================ */
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    -ms-font-feature-settings: "liga" 1;
+    -o-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /* line 22, ../sass/style.scss */
 body {
-  font-size: 62.5%;
-  text-align: center;
-  background-color: #F4F3F1;
-  max-width: 125rem;
+    background-color: #F4F3F1;
+    font-size: 62.5%;
+    max-width: 125rem;
+    text-align: center;
 }
 
 /* line 29, ../sass/style.scss */
 .hero {
-  max-width: 95rem;
-  margin: 0 auto;
-  /*padding-bottom: 10%;*/
-  padding-bottom: 12rem;
-  background: url("../images/hero.png");
-  background-size: cover;
+    background: url("../images/hero.png");
+    background-size: cover;
+    /*padding-bottom: 10%;*/
+    margin: 0 auto;
+    max-width: 95rem;
+    padding-bottom: 12rem;
 }
+
 /* line 38, ../sass/style.scss */
 .hero header {
-  overflow: hidden;
-  *zoom: 1;
+    overflow: hidden;
+    *zoom: 1;
 }
+
 /* line 39, ../sass/style.scss */
 .hero header img {
-  float: left;
-  height: 6rem;
-  margin: 0 auto;
-  width: 10rem;
+    float: left;
+    height: 6rem;
+    margin: 0 auto;
+    width: 10rem;
 }
+
 /* line 46, ../sass/style.scss */
 .hero header ul {
-  float: right;
-  color: white;
-  padding: 0 8rem;
+    color: white;
+    float: right;
+    padding: 0 8rem;
 }
+
 /* line 51, ../sass/style.scss */
 .hero header ul li {
-  font-family: Arial, Sans-serif;
-  font-size: 1.1rem;
-  float: left;
-  border: 1px solid transparent;
-  padding: 0.5rem .5rem;
-  margin: 1rem 0;
-  border-radius: 3px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    float: left;
+    font-family: Arial, Sans-serif;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    padding: 0.5rem .5rem;
 }
+
 /* line 60, ../sass/style.scss */
 .hero header ul li:last-child {
-  border: 1px solid #ffffff;
-  margin-left: .7rem;
-  padding: .5rem .8rem;
+    border: 1px solid #ffffff;
+    margin-left: .7rem;
+    padding: .5rem .8rem;
 }
+
 /* line 71, ../sass/style.scss */
 .hero h1 {
-  font-family: Arial, serif;
-  font-weight: bold;
-  font-size: 1.8rem;
-  color: white;
-  margin-top: 15rem;
-  margin-bottom: .8rem;
+    color: white;
+    font-family: Arial, serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: .8rem;
+    margin-top: 15rem;
 }
+
 /* line 80, ../sass/style.scss */
 .hero h2 {
-  font-family: Arial, serif;
-  font-size: 1.1rem;
-  color: #B0B2B9;
+    color: #B0B2B9;
+    font-family: Arial, serif;
+    font-size: 1.1rem;
 }
+
 /* line 86, ../sass/style.scss */
 .hero form {
-  padding: 1.5rem 0 15rem 0;
-  /*@include inline-block;*/
-  letter-spacing: -0.31em;
+    letter-spacing: -0.31em;
+    /*@include inline-block;*/
+    padding: 1.5rem 0 15rem 0;
 }
+
 /* line 92, ../sass/style.scss */
 .hero form input[type="text"] {
-  font-size: 1.2rem;
-  padding: 1.36rem 0rem 1.5rem 1rem;
-  border: 0;
-  width: 35%;
-  border-radius: 5px 0 0 5px;
-  color: white;
-  background-color: rgba(217, 218, 218, 0.3);
+    background-color: rgba(217, 218, 218, 0.3);
+    border: 0;
+    border-radius: 5px 0 0 5px;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1.36rem 0rem 1.5rem 1rem;
+    width: 35%;
 }
+
 /* line 61, ../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 .hero form input[type="text"]:-moz-placeholder {
-  color: white;
+    color: white;
 }
+
 /* line 64, ../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 .hero form input[type="text"]::-moz-placeholder {
-  color: white;
+    color: white;
 }
+
 /* line 67, ../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 .hero form input[type="text"]:-ms-input-placeholder {
-  color: white;
+    color: white;
 }
+
 /* line 56, ../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 .hero form input[type="text"]::-webkit-input-placeholder {
-  color: white;
+    color: white;
 }
+
 /* line 106, ../sass/style.scss */
 .hero form input[type="button"] {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 1rem;
-  font-family: Arial, serif;
-  text-align: center;
-  color: #ffffff;
-  padding: 1.5rem 2rem;
-  border: 0;
-  background-color: #67DDAB;
-  border-radius: 0 5px 5px 0;
+    background-color: #67DDAB;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    color: #ffffff;
+    font-family: Arial, serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 /* line 121, ../sass/style.scss */
 .numbers {
-  margin: 0 auto;
-  width: 70%;
-  max-width: 70rem;
+    margin: 0 auto;
+    max-width: 70rem;
+    width: 70%;
 }
+
 /* line 126, ../sass/style.scss */
 .numbers ul {
-  position: relative;
-  top: -7rem;
-  background: #F4F3F1;
-  border-radius: 5px;
-  margin: 0 auto;
-  overflow: hidden;
-  *zoom: 1;
+    background: #F4F3F1;
+    border-radius: 5px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    top: -7rem;
+    *zoom: 1;
 }
+
 /* line 133, ../sass/style.scss */
 .numbers ul li {
-  border-bottom: 3px solid #D9DADA;
-  border-left: 1px solid #D9DADA;
-  border-top: 1px solid #D9DADA;
-  box-sizing: border-box;
-  float: left;
-  padding: 1rem 0rem;
-  width: 25%;
+    border-bottom: 3px solid #D9DADA;
+    border-left: 1px solid #D9DADA;
+    border-top: 1px solid #D9DADA;
+    box-sizing: border-box;
+    float: left;
+    padding: 1rem 0rem;
+    width: 25%;
 }
+
 /* line 142, ../sass/style.scss */
 .numbers ul li:last-child {
-  border-right: 1px solid #D9DADA;
+    border-right: 1px solid #D9DADA;
 }
+
 /* line 146, ../sass/style.scss */
 .numbers ul li h2 {
-  color: #60677A;
-  font-family: Arial, serif;
-  font-size: 2rem;
-  font-weight: bold;
-  padding: 2rem 0 1rem 0;
+    color: #60677A;
+    font-family: Arial, serif;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem 0 1rem 0;
 }
+
 /* line 154, ../sass/style.scss */
 .numbers ul li h3 {
-  font-family: Arial, serif;
-  font-size: 1.1rem;
-  color: gray;
-  padding: 0 0 1.8rem 0;
+    color: gray;
+    font-family: Arial, serif;
+    font-size: 1.1rem;
+    padding: 0 0 1.8rem 0;
 }
 
 /* line 166, ../sass/style.scss */
 .title {
-  color: #60677A;
-  font-family: Arial, serif;
-  font-size: 2em;
-  font-weight: bold;
-  text-transform: uppercase;
+    color: #60677A;
+    font-family: Arial, serif;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
 }
+
 /* line 173, ../sass/style.scss */
 .title:after {
-  content: '';
-  display: block;
-  background-color: lightgray;
-  width: 3rem;
-  height: .2rem;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  margin: 0.4rem auto 0 auto;
+    background-color: lightgray;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    content: '';
+    display: block;
+    height: .2rem;
+    margin: 0.4rem auto 0 auto;
+    width: 3rem;
 }
 
 /* line 186, ../sass/style.scss */
 .how-it-works {
-  max-width: 90rem;
-  margin: 0 auto;
-  background-color: #F4F3F1;
+    background-color: #F4F3F1;
+    margin: 0 auto;
+    max-width: 90rem;
 }
+
 /* line 191, ../sass/style.scss */
 .how-it-works ul {
-  margin: 4em 0 8em 0;
-  overflow: auto;
+    margin: 4em 0 8em 0;
+    overflow: auto;
 }
+
 /* line 195, ../sass/style.scss */
 .how-it-works ul li {
-  float: left;
-  width: 33.3%;
-  box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    width: 33.3%;
 }
+
 /* line 196, ../sass/style.scss */
 .how-it-works ul li:before {
-  display: block;
-  content: "";
-  background-color: lightgray;
-  height: 3px;
-  position: relative;
-  top: 3.5rem;
-  left: 50%;
-  margin: 0 2rem 0 2.0rem;
+    background-color: lightgray;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    margin: 0 2rem 0 2.0rem;
+    position: relative;
+    top: 3.5rem;
 }
+
 /* line 207, ../sass/style.scss */
 .how-it-works ul li:last-child:before {
-  display: none;
+    display: none;
 }
+
 /* line 215, ../sass/style.scss */
 .how-it-works ul li .number {
-  font-size: 1.8rem;
-  color: gray;
-  border: 3px solid lightgray;
-  width: 2.5rem;
-  height: 2.5rem;
-  display: block;
-  line-height: 2.5rem;
-  margin: 1rem auto 4rem auto;
-  padding: .4em;
-  font-family: Arial, serif;
-  font-weight: bold;
-  -moz-border-radius: 100%;
-  -webkit-border-radius: 100%;
-  border-radius: 100%;
+    border: 3px solid lightgray;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    color: gray;
+    display: block;
+    font-family: Arial, serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    margin: 1rem auto 4rem auto;
+    padding: .4em;
+    width: 2.5rem;
 }
+
 /* line 231, ../sass/style.scss */
 .how-it-works ul li p {
-  font-family: serif;
-  font-size: 1.2rem;
-  color: darkgray;
-  text-align: center;
-  line-height: 1.7rem;
-  margin: auto;
-  width: 80%;
+    color: darkgray;
+    font-family: serif;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    margin: auto;
+    text-align: center;
+    width: 80%;
 }
+
 /* line 243, ../sass/style.scss */
 .how-it-works:after {
-  content: "";
-  display: block;
-  background-color: lightgray;
-  height: 2px;
-  max-width: 100rem;
+    background-color: lightgray;
+    content: "";
+    display: block;
+    height: 2px;
+    max-width: 100rem;
 }
 
 /* line 252, ../sass/style.scss */
 .icon {
-  font-size: 5rem;
+    font-size: 5rem;
 }
 
 /* line 256, ../sass/style.scss */
 .icon-profile:before {
-  margin: 2rem auto;
-  color: #ECA95A;
-  content: "\e923";
+    color: #ECA95A;
+    content: "\e923";
+    margin: 2rem auto;
 }
 
 /* line 262, ../sass/style.scss */
 .icon-pencil:before {
-  color: #AD9DD3;
-  content: "\e905";
+    color: #AD9DD3;
+    content: "\e905";
 }
 
 /* line 267, ../sass/style.scss */
 .icon-people:before {
-  color: #4D99CB;
-  content: "\e9de";
+    color: #4D99CB;
+    content: "\e9de";
 }
 
 /* line 272, ../sass/style.scss */
 .icon-title {
-  margin: 2rem auto 1rem auto;
-  font-family: Arial, Sans-serif;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #60677A;
+    color: #60677A;
+    font-family: Arial, Sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 2rem auto 1rem auto;
 }
 
 /* line 280, ../sass/style.scss */
 .icon-quick:before {
-  content: "\ea10";
-  color: #66BE96;
+    color: #66BE96;
+    content: "\ea10";
 }
 
 /* line 285, ../sass/style.scss */
 .icon-easy:before {
-  content: "\ea2e";
-  color: #ECA95A;
+    color: #ECA95A;
+    content: "\ea2e";
 }
 
 /* line 290, ../sass/style.scss */
 .icon-free:before {
-  content: "\e935";
-  color: #01B4EA;
+    color: #01B4EA;
+    content: "\e935";
 }
 
 /* line 295, ../sass/style.scss */
 .icon-independent:before {
-  content: "\e971";
-  color: #AF7AC4;
+    color: #AF7AC4;
+    content: "\e971";
 }
 
 /* line 300, ../sass/style.scss */
 .icon-comprehensive:before {
-  content: "\e922";
-  color: #F26D7E;
+    color: #F26D7E;
+    content: "\e922";
 }
 
 /* line 305, ../sass/style.scss */
 .icon-awesome:before {
-  content: "\e9d9";
-  color: #ED7F5B;
+    color: #ED7F5B;
+    content: "\e9d9";
 }
 
 /* line 310, ../sass/style.scss */
 .icon-small {
-  font-size: 2.5rem;
+    font-size: 2.5rem;
 }
 
 /* line 314, ../sass/style.scss */
 .why-choose-us {
-  max-width: 100rem;
-  margin: 5rem auto 0 auto;
+    margin: 5rem auto 0 auto;
+    max-width: 100rem;
 }
+
 /* line 318, ../sass/style.scss */
 .why-choose-us .title {
-  margin-bottom: 5rem;
+    margin-bottom: 5rem;
 }
+
 /* line 322, ../sass/style.scss */
 .why-choose-us ul {
-  max-width: 100rem;
-  width: 85%;
-  margin: 0 auto;
+    margin: 0 auto;
+    max-width: 100rem;
+    width: 85%;
 }
+
 /* line 327, ../sass/style.scss */
 .why-choose-us ul li {
-  display: inline-block;
-  box-sizing: border-box;
-  width: 45%;
-  margin-bottom: 2rem;
-  margin-left: 3%;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-bottom: 2rem;
+    margin-left: 3%;
+    width: 45%;
 }
+
 /* line 334, ../sass/style.scss */
 .why-choose-us ul li .icon {
-  width: 20%;
-  height: 100%;
-  float: left;
-  display: inline-block;
+    display: inline-block;
+    float: left;
+    height: 100%;
+    width: 20%;
 }
+
 /* line 341, ../sass/style.scss */
 .why-choose-us ul li .icon-title {
-  float: left;
-  margin: 0 auto 1rem auto;
+    float: left;
+    margin: 0 auto 1rem auto;
 }
+
 /* line 346, ../sass/style.scss */
 .why-choose-us ul li p {
-  clear: both;
-  font-family: Arial, Sans-serif;
-  font-size: 1.2rem;
-  color: darkgray;
-  line-height: 1.5rem;
-  text-align: left;
-  margin-left: 20%;
-  margin-right: 10%;
+    clear: both;
+    color: darkgray;
+    font-family: Arial, Sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin-left: 20%;
+    margin-right: 10%;
+    text-align: left;
 }
+
 /* line 359, ../sass/style.scss */
 .why-choose-us:after {
-  margin: 0 auto;
-  display: block;
-  content: "";
-  background-color: lightgray;
-  height: 3px;
-  max-width: 90rem;
+    background-color: lightgray;
+    content: "";
+    display: block;
+    height: 3px;
+    margin: 0 auto;
+    max-width: 90rem;
 }
 
 /* line 372, ../sass/style.scss */
 .feedback {
-  margin-top: 4rem;
+    margin-top: 4rem;
 }
+
 /* line 375, ../sass/style.scss */
 .feedback header {
-  letter-spacing: -1rem;
+    letter-spacing: -1rem;
 }
+
 /* line 378, ../sass/style.scss */
 .feedback header .feedback-button, .feedback header .feedback-test, .feedback header .feedback-recent {
-  padding: 1rem;
-  width: 12rem;
-  height: 4rem;
-  font-family: Arial, Sans-serif;
-  font-weight: bold;
-  border: 2px solid #60677A;
-  font-size: .8rem;
+    border: 2px solid #60677A;
+    font-family: Arial, Sans-serif;
+    font-size: .8rem;
+    font-weight: bold;
+    height: 4rem;
+    padding: 1rem;
+    width: 12rem;
 }
+
 /* line 390, ../sass/style.scss */
 .feedback header .feedback-test {
-  background-color: #60677A;
-  color: white;
-  border-radius: 4px 0 0 4px;
+    background-color: #60677A;
+    border-radius: 4px 0 0 4px;
+    color: white;
 }
+
 /* line 398, ../sass/style.scss */
 .feedback header .feedback-recent {
-  background-color: #F4F3F1;
-  color: #60677A;
-  border-radius: 0 4px 4px 0;
+    background-color: #F4F3F1;
+    border-radius: 0 4px 4px 0;
+    color: #60677A;
 }
+
 /* line 408, ../sass/style.scss */
 .feedback .feedback-detail {
-  width: 60%;
-  max-width: 100rem;
-  margin: 3rem auto 0 auto;
+    margin: 3rem auto 0 auto;
+    max-width: 100rem;
+    width: 60%;
 }
+
 /* line 413, ../sass/style.scss */
 .feedback .feedback-detail .feedback-content {
-  font-family: Arial, Sans-serif;
-  font-size: 1.5rem;
-  color: #60677A;
-  line-height: 1.7rem;
-  font-weight: bold;
+    color: #60677A;
+    font-family: Arial, Sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.7rem;
 }
+
 /* line 420, ../sass/style.scss */
 .feedback .feedback-detail .feedback-content:before {
-  font-family: serif;
-  content: "“";
-  display: block;
-  height: 5rem;
-  line-height: 5rem;
-  width: 5rem;
-  text-align: center;
-  font-size: 5rem;
-  margin: 0 auto;
-  color: #D9DADA;
+    color: #D9DADA;
+    content: "“";
+    display: block;
+    font-family: serif;
+    font-size: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    margin: 0 auto;
+    text-align: center;
+    width: 5rem;
 }
+
 /* line 433, ../sass/style.scss */
 .feedback .feedback-detail .feedback-content:after {
-  content: "";
-  display: block;
-  width: 2rem;
-  height: 2px;
-  background-color: #D9DADA;
-  margin: 2rem auto;
+    background-color: #D9DADA;
+    content: "";
+    display: block;
+    height: 2px;
+    margin: 2rem auto;
+    width: 2rem;
 }
+
 /* line 443, ../sass/style.scss */
 .feedback .feedback-detail .feedback-name {
-  font-family: Arial, Sans-serif;
-  font-weight: bold;
-  font-size: 1.1rem;
-  color: #60677A;
+    color: #60677A;
+    font-family: Arial, Sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
+
 /* line 450, ../sass/style.scss */
 .feedback .feedback-detail .feedback-job {
-  margin: .8rem auto;
-  font-family: Arial, Sans-serif;
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: #A0A5B0;
+    color: #A0A5B0;
+    font-family: Arial, Sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: .8rem auto;
 }
+
 /* line 459, ../sass/style.scss */
 .feedback .feedback-pics {
-  margin: 3rem auto 0 auto;
-  overflow: hidden;
-  text-align: center;
-  width: 39%;
+    margin: 3rem auto 0 auto;
+    overflow: hidden;
+    text-align: center;
+    width: 39%;
 }
+
 /* line 465, ../sass/style.scss */
 .feedback .feedback-pics .feedback-pic {
-  margin: 6%;
-  padding: .4rem;
-  float: left;
-  width: 20%;
-  /*height: 8rem;*/
-  /*width: 7rem;*/
-  -moz-border-radius: 100%;
-  -webkit-border-radius: 100%;
-  border-radius: 100%;
-  box-sizing: border-box;
-  display: block;
-  opacity: .5;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    box-sizing: border-box;
+    /*height: 8rem;*/
+    /*width: 7rem;*/
+    display: block;
+    float: left;
+    margin: 6%;
+    opacity: .5;
+    padding: .4rem;
+    width: 20%;
 }
+
 /* line 480, ../sass/style.scss */
 .feedback .feedback-pics .pic-middle {
-  border: 3px solid #D9DADA;
-  opacity: 1;
+    border: 3px solid #D9DADA;
+    opacity: 1;
 }
 
 /* line 487, ../sass/style.scss */
 .footer-search {
-  max-width: 80rem;
-  margin: 4rem auto 0 auto;
-  background: url("../images/footer-pic.jpg");
-  background-size: contain;
-  border: 0;
-  padding: 6rem;
-  overflow: hidden;
-  text-align: center;
-  /*display: flex;*/
-  /*justify-content: center;*/
-  /*align-items: stretch;*/
+    background: url("../images/footer-pic.jpg");
+    background-size: contain;
+    border: 0;
+    margin: 4rem auto 0 auto;
+    max-width: 80rem;
+    overflow: hidden;
+    padding: 6rem;
+    text-align: center;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: stretch;*/
 }
+
 /* line 500, ../sass/style.scss */
 .footer-search ul {
-  text-align: center;
-  overflow: hidden;
-  margin: 0 auto;
-  width: 85%;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    width: 85%;
 }
+
 /* line 507, ../sass/style.scss */
 .footer-search li {
-  float: left;
-  box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
 }
+
 /* line 512, ../sass/style.scss */
 .footer-search li:first-child {
-  width: 30%;
-  padding-right: 2%;
+    padding-right: 2%;
+    width: 30%;
 }
+
 /* line 517, ../sass/style.scss */
 .footer-search li:last-child {
-  width: 70%;
+    width: 70%;
 }
+
 /* line 521, ../sass/style.scss */
 .footer-search .footer-side {
-  font-family: Arial, Sans-serif;
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: white;
-  height: 2.8rem;
-  line-height: 2.8rem;
-  white-space: nowrap;
+    color: white;
+    font-family: Arial, Sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    height: 2.8rem;
+    line-height: 2.8rem;
+    white-space: nowrap;
 }
+
 /* line 531, ../sass/style.scss */
 .footer-search div {
-  letter-spacing: -0.31rem;
-  height: 2.8rem;
+    height: 2.8rem;
+    letter-spacing: -0.31rem;
 }
+
 /* line 535, ../sass/style.scss */
 .footer-search div input {
-  float: left;
-  box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
 }
+
 /* line 541, ../sass/style.scss */
 .footer-search .footer-search-input {
-  width: 75%;
-  padding-left: .5rem;
-  height: 2.8rem;
-  border: 0;
-  border-radius: 4px 0 0 4px;
+    border: 0;
+    border-radius: 4px 0 0 4px;
+    height: 2.8rem;
+    padding-left: .5rem;
+    width: 75%;
 }
+
 /* line 61, ../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 .footer-search .footer-search-input:-moz-placeholder {
-  color: #60677A;
-  font-family: Arial, Sans-serif;
+    color: #60677A;
+    font-family: Arial, Sans-serif;
 }
+
 /* line 64, ../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 .footer-search .footer-search-input::-moz-placeholder {
-  color: #60677A;
-  font-family: Arial, Sans-serif;
+    color: #60677A;
+    font-family: Arial, Sans-serif;
 }
+
 /* line 67, ../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 .footer-search .footer-search-input:-ms-input-placeholder {
-  color: #60677A;
-  font-family: Arial, Sans-serif;
+    color: #60677A;
+    font-family: Arial, Sans-serif;
 }
+
 /* line 56, ../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 .footer-search .footer-search-input::-webkit-input-placeholder {
-  color: #60677A;
-  font-family: Arial, Sans-serif;
+    color: #60677A;
+    font-family: Arial, Sans-serif;
 }
+
 /* line 554, ../sass/style.scss */
 .footer-search .footer-search-button {
-  width: 25%;
-  padding: 0;
-  height: 2.8rem;
-  text-transform: uppercase;
-  font-family: Arial, Sans-serif;
-  font-weight: bold;
-  color: white;
-  background-color: #67DDAB;
-  border: 0;
-  border-radius: 0 4px 4px 0;
+    background-color: #67DDAB;
+    border: 0;
+    border-radius: 0 4px 4px 0;
+    color: white;
+    font-family: Arial, Sans-serif;
+    font-weight: bold;
+    height: 2.8rem;
+    padding: 0;
+    text-transform: uppercase;
+    width: 25%;
 }
 
 /* line 568, ../sass/style.scss */
 footer {
-  margin: 1.5rem auto;
-  max-width: 80rem;
-  overflow: hidden;
-  width: 85%;
+    margin: 1.5rem auto;
+    max-width: 80rem;
+    overflow: hidden;
+    width: 85%;
 }
+
 /* line 574, ../sass/style.scss */
 footer .tp-links {
-  float: left;
-  overflow: hidden;
+    float: left;
+    overflow: hidden;
 }
+
 /* line 577, ../sass/style.scss */
 footer .tp-links li {
-  float: left;
+    float: left;
 }
+
 /* line 580, ../sass/style.scss */
 footer .tp-links a {
-  color: #60677A;
-  font-family: Arial, Sans-serif;
-  font-size: 1.3rem;
-  line-height: 2rem;
-  margin-right: .7rem;
-  text-decoration: none;
+    color: #60677A;
+    font-family: Arial, Sans-serif;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin-right: .7rem;
+    text-decoration: none;
 }
+
 /* line 590, ../sass/style.scss */
 footer .tp-icons {
-  float: right;
-  width: 15%;
+    float: right;
+    width: 15%;
 }
+
 /* line 594, ../sass/style.scss */
 footer .tp-icons li {
-  float: right;
+    float: right;
 }
+
 /* line 598, ../sass/style.scss */
 footer .tp-icons .icon-footer {
-  font-size: 1.5rem;
-  height: 2rem;
-  line-height: 2rem;
+    font-size: 1.5rem;
+    height: 2rem;
+    line-height: 2rem;
 }
+
 /* line 604, ../sass/style.scss */
 footer .tp-icons .icon-twitter:before {
-  color: #4D99CB;
-  content: '\ea91';
-  margin-left: 1rem;
+    color: #4D99CB;
+    content: '\ea91';
+    margin-left: 1rem;
 }
+
 /* line 610, ../sass/style.scss */
 footer .tp-icons .icon-facebook:before {
-  color: #4C73B6;
-  content: '\ea8c';
+    color: #4C73B6;
+    content: '\ea8c';
 }

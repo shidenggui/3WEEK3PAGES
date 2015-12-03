@@ -64,39 +64,268 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 3, ../sass/components/_icon.scss */
+/* line 2, ../sass/components/_icon.scss */
 .icon-quill:before {
-  display: block;
   content: "";
 }
 
-/* line 3, ../sass/components/_icon.scss */
+/* line 2, ../sass/components/_icon.scss */
 .icon-bell:before {
-  display: block;
   content: "";
 }
 
-/* line 2, ../sass/layout/_page_header.scss */
-.page-header {
-  border: 10px solid;
+/* line 2, ../sass/components/_icon.scss */
+.icon-email:before {
+  content: "";
 }
+
+/* line 2, ../sass/components/_icon.scss */
+.icon-cog:before {
+  content: "";
+}
+
+/* line 25, ../sass/components/_icon.scss */
+.icon-twitter:before {
+  content: '\ea91';
+}
+
+/* line 31, ../sass/components/_icon.scss */
+.icon-link:before {
+  content: '\e9cb';
+}
+
+/* line 37, ../sass/components/_icon.scss */
+.icon-redo:before {
+  content: '\e968';
+}
+
+/* line 43, ../sass/components/_icon.scss */
+.icon-star:before {
+  content: '\e9d9';
+}
+
+/* line 48, ../sass/components/_icon.scss */
+.icon-loop:before {
+  content: '\ea2e';
+}
+
+/* line 52, ../sass/components/_icon.scss */
+.icon-ellipsis:before {
+  content: '\e935';
+}
+
+/* line 56, ../sass/components/_icon.scss */
+.icon-maximize:before {
+  content: '\e98b';
+}
+
 /* line 3, ../sass/layout/_page_header.scss */
-.page-header a {
+.page-header {
+  -moz-box-shadow: 0px 0px 2px lightgray;
+  -webkit-box-shadow: 0px 0px 2px lightgray;
+  box-shadow: 0px 0px 2px lightgray;
+  position: relative;
+  background-color: #FFFBF5;
+}
+/* line 7, ../sass/layout/_page_header.scss */
+.page-header nav {
+  overflow: hidden;
+}
+/* line 10, ../sass/layout/_page_header.scss */
+.page-header .menus {
+  float: left;
+}
+/* line 12, ../sass/layout/_page_header.scss */
+.page-header .menus .item {
+  float: left;
+  margin: 0 0 0 1rem;
+  padding: 1.3rem 0;
+}
+/* line 16, ../sass/layout/_page_header.scss */
+.page-header .menus .item:first-child {
+  border-right: 1px solid lightgray;
+  padding-right: 1rem;
+}
+/* line 20, ../sass/layout/_page_header.scss */
+.page-header .menus .item a {
   text-decoration: none;
+}
+/* line 22, ../sass/layout/_page_header.scss */
+.page-header .menus .item a .icon {
+  border: 1px solid lightgray;
+  color: #666666;
+  font-size: .6rem;
+  padding: .6rem;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+/* line 30, ../sass/layout/_page_header.scss */
+.page-header .menus .item a .icon-quill {
+  border: 0;
+  background-color: #80A8CC;
+  color: white;
+}
+
+/* line 42, ../sass/layout/_page_header.scss */
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+/* line 47, ../sass/layout/_page_header.scss */
+.logo .icon-twitter {
+  font-size: 1.8rem;
+  color: #80A8CC;
+}
+
+/* line 56, ../sass/layout/_page_header.scss */
+.page-header nav {
+  position: relative;
+}
+/* line 59, ../sass/layout/_page_header.scss */
+.page-header .vertical-center, .page-header .search, .page-header .avator {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* line 64, ../sass/layout/_page_header.scss */
+.page-header .search {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 2px lightgray;
+  -webkit-box-shadow: 0px 0px 2px lightgray;
+  box-shadow: 0px 0px 2px lightgray;
+  padding-left: .2rem;
+  right: 3.2rem;
+  border: 1px solid lightgray;
+}
+/* line 71, ../sass/layout/_page_header.scss */
+.page-header .search:hover {
+  border: 0;
+}
+/* line 74, ../sass/layout/_page_header.scss */
+.page-header .search:focus {
+  outline: none;
+}
+/* line 79, ../sass/layout/_page_header.scss */
+.page-header .avator {
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  width: 1.8rem;
+  height: 1.8rem;
+  right: .5rem;
 }
 
 /* line 3, ../sass/layout/_leftaside.scss */
 .page-left-aside {
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 1px lightgray;
   float: left;
-  border: 5px solid black;
+  width: 14rem;
+  background-color: #80A8CC;
+  color: white;
 }
-/* line 7, ../sass/layout/_leftaside.scss */
-.page-left-aside a {
+/* line 11, ../sass/layout/_leftaside.scss */
+.page-left-aside .profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* line 17, ../sass/layout/_leftaside.scss */
+.page-left-aside .profile .avator {
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  height: 5rem;
+  width: 5rem;
+  margin: 2rem 0 .5rem;
+}
+/* line 25, ../sass/layout/_leftaside.scss */
+.page-left-aside .profile .name {
+  font-weight: bold;
+  font-size: 1rem;
+  padding: .5rem 0;
+}
+/* line 33, ../sass/layout/_leftaside.scss */
+.page-left-aside .profile .intro {
+  font-weight: lighter;
+  width: 85%;
+  line-height: 1rem;
+  text-align: center;
+}
+/* line 41, ../sass/layout/_leftaside.scss */
+.page-left-aside .profile .link {
+  font-size: .8rem;
+  margin: 1rem 0 0;
+}
+/* line 46, ../sass/layout/_leftaside.scss */
+.page-left-aside .profile .link a {
+  color: white;
   text-decoration: none;
+  outline: none;
 }
-/* line 10, ../sass/layout/_leftaside.scss */
-.page-left-aside .item {
+/* line 53, ../sass/layout/_leftaside.scss */
+.page-left-aside .profile .follow {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  text-shadow: 0 0 1px lightgray;
+  font-weight: lighter;
+  color: white;
+  background-color: #6C94B8;
+  border: 0;
+  padding: .5rem 2.5rem;
+  margin: 1rem 0 1rem;
+}
+/* line 68, ../sass/layout/_leftaside.scss */
+.page-left-aside .gallery .album {
+  overflow: hidden;
+}
+/* line 71, ../sass/layout/_leftaside.scss */
+.page-left-aside .gallery .album .album-pic {
+  width: 33.3%;
+  height: 4.5rem;
   float: left;
+  box-sizing: border-box;
+  border: 0;
+}
+/* line 81, ../sass/layout/_leftaside.scss */
+.page-left-aside .activities {
+  padding-bottom: 2rem;
+}
+/* line 83, ../sass/layout/_leftaside.scss */
+.page-left-aside .activities .title {
+  font-size: .9rem;
+  margin: 1.4rem 0 0 1.5rem;
+}
+/* line 88, ../sass/layout/_leftaside.scss */
+.page-left-aside .activities .list {
+  font-size: .7rem;
+  margin: .5rem 0 0 1.5rem;
+}
+/* line 92, ../sass/layout/_leftaside.scss */
+.page-left-aside .activities .list li {
+  margin-bottom: .45rem;
+}
+/* line 96, ../sass/layout/_leftaside.scss */
+.page-left-aside .activities .list i, .page-left-aside .activities .list span {
+  margin-right: .6rem;
+  color: #3b6992;
+  text-shadow: 0 0 0;
+  opacity: .5;
+}
+/* line 103, ../sass/layout/_leftaside.scss */
+.page-left-aside .activities .list .active {
+  margin-right: 0.15rem;
+}
+/* line 106, ../sass/layout/_leftaside.scss */
+.page-left-aside .activities .list .target {
+  color: white !important;
+  opacity: 1 !important;
 }
 
 @font-face {
@@ -108,12 +337,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 8, ../sass/vendor/_iconmoon.scss */
 .icon {
   font-family: 'IcoMoon-Free';
-  speak: none;
   font-style: normal;
-  font-weight: normal;
   font-variant: normal;
-  text-transform: none;
+  font-weight: normal;
   line-height: 1;
+  text-transform: none;
+  speak: none;
   /* Enable Ligatures ================ */
   -webkit-font-feature-settings: "liga";
   -moz-font-feature-settings: "liga=1";
@@ -126,174 +355,160 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 28, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 body {
-  font-size: 62.5%;
-  font-family: Arial;
   background-color: #F2EEE8;
+  font-family: Arial;
+  font-size: 62.5%;
 }
 
-/* line 34, ../sass/main.scss */
+/* line 38, ../sass/main.scss */
 section {
   font-size: .8rem;
 }
 
-/* line 38, ../sass/main.scss */
+/* line 42, ../sass/main.scss */
+.page-content {
+  margin-top: 3rem;
+  margin-left: 14rem;
+}
+
+/* line 47, ../sass/main.scss */
 .info {
-  margin: 0 2rem 5rem 2rem;
-  box-shadow: 0px 0px 2px lightgray;
   background-color: #FFFBF5;
+  box-shadow: 0px 0px 2px lightgray;
+  margin: 0 2rem 5rem 2rem;
   overflow: hidden;
 }
-/* line 46, ../sass/main.scss */
+/* line 54, ../sass/main.scss */
 .info ul {
   float: left;
   width: 100%;
 }
-/* line 50, ../sass/main.scss */
+/* line 58, ../sass/main.scss */
 .info ul li {
-  padding: 1rem;
-  float: left;
   box-sizing: border-box;
+  float: left;
+  padding: 1rem;
   width: 25%;
 }
 @media only screen and (max-width: 420px) {
-  /* line 50, ../sass/main.scss */
+  /* line 58, ../sass/main.scss */
   .info ul li {
     float: none;
     width: 100%;
   }
 }
 @media only screen and (min-width: 421px) and (max-width: 799px) {
-  /* line 50, ../sass/main.scss */
+  /* line 58, ../sass/main.scss */
   .info ul li {
     width: 50%;
   }
 }
-/* line 67, ../sass/main.scss */
+/* line 75, ../sass/main.scss */
 .info .item {
-  font-size: .9rem;
-  text-align: center;
-  line-height: 1.3rem;
-  text-shadow: .1px .1px .2px;
   border-bottom: 5px solid #FFFBF5;
+  font-size: .9rem;
+  line-height: 1.3rem;
+  text-align: center;
+  text-shadow: .1px .1px .2px;
 }
-/* line 74, ../sass/main.scss */
+/* line 82, ../sass/main.scss */
 .info .item:hover {
   border-bottom: 5px solid #7FA7CB;
 }
-/* line 77, ../sass/main.scss */
+/* line 85, ../sass/main.scss */
 .info .item h4 {
   color: #D7D3C5;
 }
-/* line 81, ../sass/main.scss */
+/* line 89, ../sass/main.scss */
 .info .item p {
-  font-weight: bold;
   color: #666666;
+  font-weight: bold;
 }
 
-/* line 89, ../sass/main.scss */
+/* line 97, ../sass/main.scss */
 .post {
-  margin: 0 2rem;
-  position: relative;
-  text-align: left;
-  padding: 2rem;
   background-color: #FFFBF5;
   box-shadow: 0px 0px 2px lightgray;
+  margin: 0 2rem;
+  padding: 2rem;
+  position: relative;
+  text-align: left;
   text-shadow: 0px 0px .4px gray;
 }
-/* line 98, ../sass/main.scss */
+/* line 106, ../sass/main.scss */
 .post .content {
-  margin-left: 4rem;
   font-family: Arial, Sans;
+  margin-left: 4rem;
 }
-/* line 102, ../sass/main.scss */
+/* line 110, ../sass/main.scss */
 .post .content span {
   margin-right: .1rem;
 }
-/* line 105, ../sass/main.scss */
+/* line 113, ../sass/main.scss */
 .post .content span.name {
-  font-weight: bold;
   color: #666666;
+  font-weight: bold;
 }
-/* line 110, ../sass/main.scss */
+/* line 118, ../sass/main.scss */
 .post .content span.account {
-  font-weight: lighter;
   color: #D7D3C5;
+  font-weight: lighter;
 }
-/* line 115, ../sass/main.scss */
+/* line 123, ../sass/main.scss */
 .post .content span.time {
   color: #D7D3C5;
   float: right;
   margin-right: 0;
 }
-/* line 123, ../sass/main.scss */
+/* line 131, ../sass/main.scss */
 .post header {
   margin-bottom: 1rem;
 }
-/* line 129, ../sass/main.scss */
+/* line 137, ../sass/main.scss */
 .post section p {
-  font-weight: normal;
   color: #7B7872;
+  font-weight: normal;
   line-height: 1.4;
 }
-/* line 135, ../sass/main.scss */
+/* line 143, ../sass/main.scss */
 .post section img {
-  width: 100%;
   margin-bottom: 1rem;
+  width: 100%;
 }
-/* line 141, ../sass/main.scss */
+/* line 149, ../sass/main.scss */
 .post footer {
   margin-top: .9rem;
 }
-/* line 143, ../sass/main.scss */
+/* line 151, ../sass/main.scss */
 .post footer a {
-  margin-right: 1rem;
   color: #C4BFAE;
+  margin-right: 1rem;
   text-decoration: none;
 }
-/* line 150, ../sass/main.scss */
+/* line 158, ../sass/main.scss */
 .post footer a:last-child {
   float: right;
   margin-right: 0;
 }
-/* line 155, ../sass/main.scss */
+/* line 163, ../sass/main.scss */
 .post footer a:hover {
   color: #999073;
 }
-/* line 159, ../sass/main.scss */
+/* line 167, ../sass/main.scss */
 .post footer i {
   font-weight: bold;
 }
-/* line 162, ../sass/main.scss */
-.post footer .icon-redo:before {
-  content: '\e968';
-}
-/* line 166, ../sass/main.scss */
-.post footer .icon-star:before {
-  content: '\e9d9';
-}
-/* line 170, ../sass/main.scss */
-.post footer .icon-loop:before {
-  content: '\ea2e';
-}
-/* line 174, ../sass/main.scss */
-.post footer .icon-ellipsis:before {
-  content: '\e935';
-}
-/* line 178, ../sass/main.scss */
-.post footer .icon-maximize:before {
-  content: '\e98b';
-}
 
-/* line 184, ../sass/main.scss */
-img {
-  width: 3rem;
+/* line 174, ../sass/main.scss */
+.post .avator {
   height: 3rem;
+  left: 2rem;
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
   border-radius: 100%;
   position: absolute;
   top: 2rem;
-  left: 2rem;
+  width: 3rem;
 }

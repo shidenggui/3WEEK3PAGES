@@ -9,50 +9,58 @@
 @import "layout/leftaside";
 
 @import "vendor/iconmoon";
-
-
-// 实现响应式布局的写法
 $break-small: 420px;
 $break-large: 800px;
 
+// 实现响应式布局的nd (max-width: $break-small) {
 @mixin response-to($media) {
   @if $media == handhelds {
-    @media only screen and (max-width: $break-small) {@content;}
+    @media only screen and (max-width: $break-small) {
+      @content;
+    }
   } @else if $media == medium-screens {
-    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content;}
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) {
+      @content;
+    }
   } @else if $media == wide-screens {
-    @media only screen and (min-width: $break-large) { @content;}
+    @media only screen and (min-width: $break-large) {
+      @content;
+    }
   }
 }
 
 body {
-  font-size: 62.5%;
-  font-family: Arial; 
   background-color: $content-bg-color;
+  font-family: Arial;
+  font-size: 62.5%;
 }
 
 section {
   font-size: .8rem;
 }
 
+.page-content {
+  margin-top: 3rem;
+  margin-left: 14rem;
+}
+
 .info {
-  margin: 0 2rem 5rem 2rem;
+  background-color: $post-bg-color;
 
   box-shadow: 0px 0px 2px lightgray;
-  background-color: $post-bg-color;
+  margin: 0 2rem 5rem 2rem;
   overflow: hidden;
-
 
   ul {
     float: left;
 
     width: 100%;
     li {
-      padding: 1rem;
-      float: left;
       box-sizing: border-box;
+      float: left;
+      padding: 1rem;
       width: 25%;
-      
+
       @include response-to(handhelds) {
         float: none;
         width: 100%;
@@ -65,11 +73,11 @@ section {
   }
 
   .item {
-    font-size: .9rem;
-    text-align: center;
-    line-height: 1.3rem;
-    text-shadow: .1px .1px .2px;
     border-bottom: 5px solid $post-bg-color;
+    font-size: .9rem;
+    line-height: 1.3rem;
+    text-align: center;
+    text-shadow: .1px .1px .2px;
 
     &:hover {
       border-bottom: 5px solid $number-border-bottom-color;
@@ -79,39 +87,39 @@ section {
     }
 
     p {
-      font-weight: bold;
       color: $boldlightdark-text-color;
+      font-weight: bold;
     }
 
   }
 }
 
 .post {
-  margin: 0 2rem;
-  position: relative;
-  text-align: left;
-  padding: 2rem;
   background-color: $post-bg-color;
   box-shadow: 0px 0px 2px lightgray;
+  margin: 0 2rem;
+  padding: 2rem;
+  position: relative;
+  text-align: left;
 
   text-shadow: 0px 0px .4px gray;
   .content {
-    margin-left: 4rem;
     font-family: Arial, Sans;
+    margin-left: 4rem;
 
     span {
       margin-right: .1rem;
 
       &.name {
-        font-weight: bold;
         color: $boldlightdark-text-color;
+        font-weight: bold;
       }
-      
+
       &.account {
-        font-weight: lighter;
         color: $gray-text-color;
+        font-weight: lighter;
       }
-      
+
       &.time {
         color: $gray-text-color;
         float: right;
@@ -119,7 +127,7 @@ section {
       }
     }
   }
-  
+
   header {
     margin-bottom: 1rem;
   }
@@ -127,23 +135,23 @@ section {
   section {
 
     p {
-      font-weight: normal;
       color: $lightdark-text-color;
+      font-weight: normal;
       line-height: 1.4;
     }
-    
+
     img {
-      width: 100%;
       margin-bottom: 1rem;
+      width: 100%;
     }
   }
-  
+
   footer {
     margin-top: .9rem;
     a {
-      margin-right: 1rem;
-
       color: $content-icon-color;
+
+      margin-right: 1rem;
 
       text-decoration: none;
 
@@ -156,36 +164,18 @@ section {
         color: darken($content-icon-color, 20%);
       }
     }
-     i {
-       font-weight: bold;
-     }
-    .icon-redo:before {
-      content: '\e968';
-    }
-    
-    .icon-star:before {
-      content: '\e9d9';
-    }
-
-    .icon-loop:before {
-      content: '\ea2e';
-    }
-
-    .icon-ellipsis:before {
-      content: '\e935';
-    }
-
-    .icon-maximize:before {
-      content: '\e98b';
+    i {
+      font-weight: bold;
     }
   }
 
 }
-img {
-  width: 3rem;
+
+.post .avator {
   height: 3rem;
+  left: 2rem;
   @include border-radius(100%);
   position: absolute;
   top: 2rem;
-  left: 2rem;
+  width: 3rem;
 }
