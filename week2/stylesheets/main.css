@@ -232,7 +232,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: Arial, sans-serif;
   font-size: 1.2rem;
   float: left;
-  width: 20%;
+  width: 25%;
   background-color: #80A8CC;
   color: white;
 }
@@ -379,7 +379,7 @@ section {
 /* line 42, ../sass/main.scss */
 .page-content {
   margin-top: 3rem;
-  margin-left: 20%;
+  margin-left: 25%;
 }
 
 /* line 48, ../sass/main.scss */
